@@ -1,0 +1,108 @@
+#mainPane {
+    -fx-background-image: url("/resources/img/pane/criminalStatisticsAnalysis.png");
+}
+
+.orangeBackground {
+    -fx-background-color: rgba(255, 114, 63, 0.4);
+    -fx-background-radius: 5px;
+}
+
+.whiteBackground {
+    -fx-background-color: rgba(220, 220, 220, 0.4);
+    -fx-background-radius: 5px;
+}
+
+#deleteButton {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-max-height: 30px;
+    -fx-max-width: 30px;
+    -fx-background-radius: 3px;
+    -fx-background-size: 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/resources/img/common/delete.png");
+}
+
+#calculateButton {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-max-height: 100px;
+    -fx-max-width: 100px;
+    -fx-background-radius: 1px;
+    -fx-background-size: 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+}
+.optionButton {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-max-height: 50px;
+    -fx-max-width: 50px;
+    -fx-background-radius: 5px;
+    -fx-background-size: 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-pref-height: infinity;
+    -fx-pref-width: infinity;
+}
+
+.optionButton:hover {
+    -fx-scale-x: 120%;
+    -fx-scale-y: 120%;
+    -fx-scale-z: 120%;
+}
+
+.miniOptionButton {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-max-height: 40px;
+    -fx-max-width: 40px;
+    -fx-background-radius: 5px;
+    -fx-background-size: 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-pref-height: infinity;
+    -fx-pref-width: infinity;
+}
+.miniOptionButton:hover {
+    -fx-scale-x: 120%;
+    -fx-scale-y: 120%;
+    -fx-scale-z: 120%;
+}
+
+#save {
+    -fx-background-image: url("/resources/img/common/save.png");
+}
+#save:hover{
+    -fx-background-image: url("/resources/img/common/save_hover.png");
+}
+#load {
+    -fx-background-image: url("/resources/img/common/load.png");
+}
+#load:hover {
+    -fx-background-image: url("/resources/img/common/load_hover.png");
+}
+#dataEdit {
+    -fx-background-image: url("/resources/img/common/data.png");
+}
+#dataEdit:hover {
+    -fx-background-image: url("/resources/img/common/data_hover.png");
+}
+#modelEdit {
+    -fx-background-image: url("/resources/img/common/model.png");
+}
+#modelEdit:hover {
+    -fx-background-image: url("/resources/img/common/model_hover.png");
+}
+
+#openVisualizationFile{
+    -fx-background-image: url("/resources/img/common/load_visualization.png");
+}
+#openVisualizationFile:hover {
+    -fx-background-image: url("/resources/img/common/load_visualization_hover.png");
+}

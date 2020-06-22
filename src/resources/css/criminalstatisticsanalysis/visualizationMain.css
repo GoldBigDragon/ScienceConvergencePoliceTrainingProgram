@@ -1,0 +1,147 @@
+#mainPane {
+    -fx-background-image: url("/resources/img/pane/criminalStatisticsAnalysis.png");
+}
+
+#save {
+    -fx-background-image: url("/resources/img/common/save.png");
+}
+#save:hover{
+    -fx-background-image: url("/resources/img/common/save_hover.png");
+}
+#openVisualizationFile{
+    -fx-background-image: url("/resources/img/common/load_visualization.png");
+}
+#openVisualizationFile:hover {
+    -fx-background-image: url("/resources/img/common/load_visualization_hover.png");
+}
+#showMap {
+    -fx-background-image: url("/resources/img/common/map_hide.png");
+}
+#showMap:hover {
+    -fx-background-image: url("/resources/img/common/map_show.png");
+}
+#showTable {
+    -fx-background-image: url("/resources/img/common/table_hide.png");
+}
+#showTable:hover {
+    -fx-background-image: url("/resources/img/common/table_show.png");
+}
+#showPieChart {
+    -fx-background-image: url("/resources/img/common/piechart_hide.png");
+}
+#showPieChart:hover {
+    -fx-background-image: url("/resources/img/common/piechart_show.png");
+}
+#showLineChart {
+    -fx-background-image: url("/resources/img/common/linechart_hide.png");
+}
+#showLineChart:hover {
+    -fx-background-image: url("/resources/img/common/linechart_show.png");
+}
+#showGuide {
+    -fx-background-image: url("/resources/img/common/guide_hide.png");
+}
+#showGuide:hover {
+    -fx-background-image: url("/resources/img/common/guide_show.png");
+}
+
+.optionButton {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-max-height: 50px;
+    -fx-max-width: 50px;
+    -fx-background-radius: 5px;
+    -fx-background-size: 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-pref-height: infinity;
+    -fx-pref-width: infinity;
+}
+.optionButton:hover {
+    -fx-scale-x: 120%;
+    -fx-scale-y: 120%;
+    -fx-scale-z: 120%;
+}
+
+.title {
+    -fx-background-color: transparent ;
+}
+
+.titled-pane:collapsed > .title > .arrow-button .arrow {
+    -fx-background-color: rgb(128, 128, 128);
+    -fx-focus-color: transparent;
+}
+
+.title > .arrow-button .arrow {
+    -fx-background-color: rgb(255, 114, 63);
+    -fx-focus-color: transparent;
+}
+
+.titled-pane > *.content {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.radio-button .radio {
+    -fx-border-width: 2px;
+    -fx-background-color: white;
+    -fx-border-color: rgb(255, 114, 63);
+    -fx-padding: 2px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-focus-color: rgba(255, 114, 63, 0.2);
+}
+
+.radio-button .dot {
+    -fx-mark-highlight-color: transparent;
+    -fx-mark-color: rgb(255, 114, 63);
+}
+
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.chart-pie{-fx-pie-color: rgba(203,203,203, 0.7);}
+
+.chart-pie:hover{
+    -fx-scale-x: 115%;
+    -fx-scale-y: 115%;
+    -fx-scale-z: 115%;
+    -fx-border-color: rgba(255, 114, 63, 0.7);
+}
+
+.chart-pie-label-line {
+    -fx-stroke: #C0C0C0;
+    -fx-fill: #A0A0A0;
+}
+
+.chart-pie-label {
+    -fx-fill: #303030;
+    -fx-font-size: 8pt;
+}
+.chart-legend {
+    -fx-background-color: transparent;
+    -fx-stroke: rgb(255, 114, 63);
+}
+
+.chart-series-line{
+    -fx-stroke-width: 6px;
+    -fx-stroke-line-cap: round;
+}
+
+.chart-series-line:hover{
+    -fx-scale-x: 101%;
+    -fx-scale-y: 101%;
+    -fx-scale-z: 101%;
+    -fx-border-color: rgba(255, 114, 63, 0.7);
+    -fx-stroke-width: 12px;
+}
+.chart-line-symbol:hover{
+    -fx-scale-x: 300%;
+    -fx-scale-y: 300%;
+    -fx-scale-z: 300%;
+    -fx-border-color: rgba(255, 114, 63, 0.7);
+    -fx-border-radius: 50px;
+    -fx-stroke-width: 2px;
+}

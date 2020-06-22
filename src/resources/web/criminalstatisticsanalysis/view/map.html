@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#FCFCFC">
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f4fc9aae6e786d37a7a42359a7fbc0b8"></script>
+<div id="map" style="width:491px;height:491px;"></div>
+
+<script type="text/javascript">
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+    var container = document.getElementById('map');
+    var options = {
+        center: new kakao.maps.LatLng(36.62699, 128.01265),
+        level: 64
+    };
+    var map = new kakao.maps.Map(container, options);
+    markers = [];
+
+    function clear() {
+        var count = 0;
+        for (; count < markers.length; count++) {
+            markers[count].setMap(null);
+        }
+        markers = [];
+    }
+
+    function createInfoWindow(latitude, longitude, message){
+        var iwContent = '<div style="padding:5px;">' + message + '</div>',
+            iwPosition = new kakao.maps.LatLng(latitude, longitude),
+            iwRemoveable = true;
+
+        var infowindow = new kakao.maps.InfoWindow({
+            map: map,
+            position : iwPosition,
+            content : iwContent,
+            removable : iwRemoveable
+        });
+        markers.push(infowindow);
+    }
+
+    function drawPolygon(startLatitude, startLongitude, endLatitude, endLongitude, borderWeight, borderColor, borderAlpha, style, fillColor, fillAlpha) {
+        var polygonPath = [
+            new kakao.maps.LatLng(startLatitude, startLongitude),
+            new kakao.maps.LatLng(endLatitude, startLongitude),
+            new kakao.maps.LatLng(endLatitude, endLongitude),
+            new kakao.maps.LatLng(startLatitude, endLongitude)
+        ];
+        var polygon = new kakao.maps.Polygon({
+            path:polygonPath,
+            strokeWeight: borderWeight,
+            strokeColor: borderColor,
+            strokeOpacity: borderAlpha,
+            strokeStyle: style,
+            fillColor: fillColor,
+            fillOpacity: fillAlpha
+        });
+        polygon.setMap(map);
+        markers.push(polygon);
+    }
+
+    function drawLine(startLatitude, startLongitude, endLatitude, endLongitude, row, column) {
+        var rowCount = 0;
+        var columnCount = 0;
+        var latiSize = (endLatitude - startLatitude) / row;
+        var longiSize = (endLongitude - startLongitude) / column;
+        for(; rowCount < row; rowCount++) {
+            var cuttedRow = startLatitude + (latiSize * (rowCount+1));
+            var rowLinePath = [
+                new kakao.maps.LatLng(cuttedRow, startLongitude),
+                new kakao.maps.LatLng(cuttedRow, endLongitude)
+            ];
+            var rowLine = new kakao.maps.Polyline({
+                path: rowLinePath,
+                strokeWeight: 1,
+                strokeColor: '#000000',
+                strokeOpacity: 1,
+                strokeStyle: 'shortdashdot'
+            });
+            rowLine.setMap(map);
+            markers.push(rowLine);
+        }
+        for(; columnCount < column; columnCount++) {
+            var cuttedColumn = startLongitude + (longiSize * (columnCount+1));
+            var columnLinePath = [
+                new kakao.maps.LatLng(startLatitude, cuttedColumn),
+                new kakao.maps.LatLng(endLatitude, cuttedColumn)
+            ];
+            var columnLine = new kakao.maps.Polyline({
+                path: columnLinePath,
+                strokeWeight: 1,
+                strokeColor: '#000000',
+                strokeOpacity: 1,
+                strokeStyle: 'shortdashdot'
+            });
+            columnLine.setMap(map);
+            markers.push(columnLine);
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+#mainPane {
+    -fx-background-image: url("/resources/img/pane/option.png");
+}
+#soundOn {
+    -fx-background-image: url("/resources/img/option/sound_on.png");
+}
+#soundOff {
+    -fx-background-image: url("/resources/img/option/sound_off.png");
+}
+#languageKo {
+    -fx-background-image: url("/resources/img/option/language_ko.png");
+}
+#languageEn {
+    -fx-background-image: url("/resources/img/option/language_en.png");
+}
+.optionButton {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-max-height: 80px;
+    -fx-max-width: 80px;
+    -fx-background-radius: 10px;
+    -fx-background-size: 80%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-pref-height: infinity;
+    -fx-pref-width: infinity;
+}
+.optionButton:hover {
+    -fx-scale-x: 110%;
+    -fx-scale-y: 110%;
+    -fx-scale-z: 110%;
+    -fx-background-color: rgba(255, 101, 50, 0.3);
+}

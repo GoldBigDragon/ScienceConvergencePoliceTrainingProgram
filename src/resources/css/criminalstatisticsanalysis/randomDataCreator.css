@@ -1,0 +1,36 @@
+#mainPane {
+    -fx-background-image: url("/resources/img/pane/createRandomData.png");
+}
+
+.miniOptionButton {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-max-height: 80px;
+    -fx-max-width: 80px;
+    -fx-background-radius: 5px;
+    -fx-background-size: 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-pref-height: infinity;
+    -fx-pref-width: infinity;
+}
+
+.miniOptionButton:hover {
+    -fx-scale-x: 120%;
+    -fx-scale-y: 120%;
+    -fx-scale-z: 120%;
+}
+
+#save {
+    -fx-background-image: url("/resources/img/common/save.png");
+}
+#save:hover{
+    -fx-background-image: url("/resources/img/common/save_hover.png");
+}
+#load {
+    -fx-background-image: url("/resources/img/common/load.png");
+}
+#load:hover {
+    -fx-background-image: url("/resources/img/common/load_hover.png");
+}

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Tooltip?>
+<GridPane fx:id="mainPane" alignment="CENTER" stylesheets="/resources/css/basic.css,/resources/css/menu/main.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goldbigdragon.github.io.function.menu.main.MainController" onMouseDragged="#mouseDragged" onMousePressed="#mousePressed">
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="100" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="10" minHeight="10" />
+        <RowConstraints percentHeight="70" minHeight="10" valignment="CENTER"/>
+        <RowConstraints percentHeight="20" minHeight="10" />
+    </rowConstraints>
+    <children>
+        <HBox alignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+            <children>
+                <GridPane minWidth="800" minHeight="350">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="80" />
+                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="20" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="100" />
+                    </rowConstraints>
+                    <children>
+                        <GridPane GridPane.columnIndex="0">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="20" />
+                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="20" />
+                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="20" />
+                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="20" />
+                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="20" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10" percentHeight="33" valignment="CENTER" />
+                                <RowConstraints minHeight="10" percentHeight="33" valignment="CENTER" />
+                                <RowConstraints minHeight="10" percentHeight="33" valignment="CENTER" />
+                            </rowConstraints>
+                            <padding>
+                                <Insets bottom="10" left="5" right="5" top="10" />
+                            </padding>
+                            <children>
+                                <Button styleClass="menubutton" fx:id="criminalStatisticsAnalysis" onMouseExited="#mouseExited" onMouseEntered="#criminalStatisticsAnalysisMouseEnter" onAction="#criminalStatisticsAnalysisOpen"/>
+                                <Button styleClass="menubutton" fx:id="routeExpecting" GridPane.columnIndex="1" onMouseExited="#mouseExited" onMouseEntered="#routeExpectingMouseEnter"/>
+                                <Button styleClass="menubutton" fx:id="blockEscapeRoute" GridPane.columnIndex="2" onMouseExited="#mouseExited" onMouseEntered="#blockEscapeRouteMouseEnter"/>
+                                <Button styleClass="menubutton" fx:id="illegalJudgmentQuiz" GridPane.columnIndex="3" onMouseExited="#mouseExited" onMouseEntered="#illegalJudgmentQuizMouseEnter"/>
+                            </children>
+                        </GridPane>
+                        <VBox alignment="BOTTOM_RIGHT" spacing="10" GridPane.columnIndex="1">
+                            <children>
+                                <Button styleClass="sideButton" id="options" onAction="#settingsOpen">
+                                    <VBox.margin>
+                                        <Insets bottom="5" top="50" />
+                                    </VBox.margin>
+                                    <tooltip><Tooltip text="환경설정" /></tooltip>
+                                </Button>
+                                <Button styleClass="sideButton" id="github" onAction="#github">
+                                    <VBox.margin>
+                                        <Insets bottom="5" top="5" />
+                                    </VBox.margin>
+                                    <tooltip><Tooltip text="개발자 GitHub" /></tooltip>
+                                </Button>
+                                <Button styleClass="sideButton" id="information" onAction="#informationOpen">
+                                    <VBox.margin>
+                                        <Insets bottom="5" top="5" />
+                                    </VBox.margin>
+                                    <tooltip><Tooltip text="도움말" /></tooltip>
+                                </Button>
+                            </children>
+                            <padding>
+                                <Insets bottom="10" left="10" right="10" top="10" />
+                            </padding>
+                        </VBox>
+                    </children>
+                </GridPane>
+            </children>
+        </HBox>
+        <VBox alignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER" GridPane.rowIndex="2" spacing="10">
+            <Label fx:id="title" text="아이콘 위에 마우스를 올려 보세요!"/>
+            <Label fx:id="description" text="학습 목표 및 간단한 설명을 볼 수 있습니다!"/>
+        </VBox>
+        <GridPane GridPane.rowIndex="0">
+            <columnConstraints>
+                <ColumnConstraints minWidth="400" percentWidth="50" />
+                <ColumnConstraints minWidth="400" percentWidth="50" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints valignment="CENTER" minHeight="10" prefHeight="100" />
+            </rowConstraints>
+            <children>
+                <HBox alignment="CENTER_LEFT" GridPane.columnIndex="0">
+                    <!--<GridPane.margin>-->
+                        <!--<Insets bottom="5" left="20" right="10" top="5" />-->
+                    <!--</GridPane.margin>-->
+                    <!--<children>-->
+                        <!--<Label text="범죄정보과학융합전공 학습 프로그램" />-->
+                    <!--</children>-->
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" GridPane.columnIndex="1" spacing="10">
+                    <children>
+                        <Button id="screenshot" styleClass="topIcon" onAction="#screenshot"><tooltip><Tooltip text="스크린샷" /></tooltip></Button>
+                        <Button fx:id="alwaysTop" styleClass="topIcon" onAction="#alwaysTop"><tooltip><Tooltip text="항상 위" /></tooltip></Button>
+                        <Button id="minimumButton" styleClass="topIcon" onAction="#minimize"><tooltip><Tooltip text="최소화" /></tooltip></Button>
+                        <Button id="closeButton" styleClass="topIcon" onAction="#shutdown"><tooltip><Tooltip text="종료" /></tooltip></Button>
+                    </children>
+                    <GridPane.margin>
+                        <Insets bottom="5" left="10" right="10" top="5"/>
+                    </GridPane.margin>
+                </HBox>
+            </children>
+        </GridPane>
+    </children>
+</GridPane>

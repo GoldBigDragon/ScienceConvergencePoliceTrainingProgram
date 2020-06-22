@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import goldbigdragon.github.io.node.NumberField?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.DatePicker?>
+<?import goldbigdragon.github.io.node.RealField?>
+<?import goldbigdragon.github.io.node.DateTimePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+<GridPane fx:id="mainPane" alignment="CENTER" stylesheets="/resources/css/basic.css,/resources/css/criminalstatisticsanalysis/dataEditor.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goldbigdragon.github.io.function.criminalstatisticsanalysis.editor.data.controller.DataEditorController" onMouseDragged="#mouseDragged" onMousePressed="#mousePressed">
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="100" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="6.5" minHeight="10" />
+        <RowConstraints percentHeight="93.5" minHeight="10" valignment="CENTER"/>
+    </rowConstraints>
+    <children>
+        <HBox alignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+            <children>
+                <GridPane fx:id="container" minWidth="800" minHeight="700">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="3" />
+                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="94" />
+                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="3" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints valignment="BOTTOM" minHeight="10" percentHeight="5" />
+                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="50" />
+                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="5" />
+                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="2" />
+                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="38" />
+                    </rowConstraints>
+                    <children>
+                        <HBox GridPane.columnIndex="1" maxHeight="Infinity" maxWidth="Infinity">
+                            <children>
+                                <MenuButton GridPane.halignment="LEFT" fx:id="categoryMenu" text="모든 카테고리">
+                                    <items>
+                                        <MenuItem onAction="#categorySelect" text="모든 카테고리" />
+                                    </items>
+                                </MenuButton>
+                                <Label text=" 속  " maxHeight="Infinity"/>
+                                <MenuButton GridPane.halignment="LEFT" fx:id="elementMenu" text="모든 엘리먼트">
+                                    <items>
+                                        <MenuItem onAction="#elementSelect" text="모든 엘리먼트" />
+                                    </items>
+                                </MenuButton>
+                                <Label text=" 를  " maxHeight="Infinity"/>
+                                <MenuButton GridPane.halignment="LEFT" fx:id="sortMenu" text="번호">
+                                    <items>
+                                        <MenuItem onAction="#sortSelect" text="번호" />
+                                        <MenuItem onAction="#sortSelect" text="카테고리" />
+                                        <MenuItem onAction="#sortSelect" text="엘리먼트" />
+                                        <MenuItem onAction="#sortSelect" text="시간" />
+                                        <MenuItem onAction="#sortSelect" text="개수" />
+                                        <MenuItem onAction="#sortSelect" text="위도" />
+                                        <MenuItem onAction="#sortSelect" text="경도" />
+                                    </items>
+                                </MenuButton>
+                                <Label text=" 기준  " maxHeight="Infinity"/>
+                                <MenuButton GridPane.halignment="LEFT" fx:id="descMenu" text="오름차순">
+                                    <items>
+                                        <MenuItem onAction="#descSelect" text="오름차순" />
+                                        <MenuItem onAction="#descSelect" text="내림차순" />
+                                    </items>
+                                </MenuButton>
+                                <Label text=" 정렬로  " maxHeight="Infinity"/>
+                                <Button text="검색" onAction="#search" maxHeight="Infinity"/>
+                            </children>
+                            <GridPane.margin>
+                                <Insets top="10" />
+                            </GridPane.margin>
+                        </HBox>
+                        <Label fx:id="progress" GridPane.rowIndex="1" GridPane.columnIndex="1" visible="false"/>
+                        <TableView fx:id="dataTable" GridPane.rowIndex="1" GridPane.columnIndex="1" maxHeight="Infinity">
+                            <columns>
+                                <TableColumn fx:id="numTableColumn" styleClass="centerAlign" minWidth="50" prefWidth="50" text="번호" />
+                                <TableColumn fx:id="mainTableColumn" styleClass="centerAlign" minWidth="100" text="카테고리" />
+                                <TableColumn fx:id="subTableColumn" styleClass="centerAlign" minWidth="100" text="엘리먼트" />
+                                <TableColumn fx:id="timeTableColumn" styleClass="centerAlign" minWidth="100" text="시간" />
+                                <TableColumn fx:id="amountTableColumn" styleClass="centerAlign" minWidth="50" text="개수" />
+                                <TableColumn fx:id="latitudeTableColumn" styleClass="centerAlign" minWidth="110" text="위도" />
+                                <TableColumn fx:id="longitudeTableColumn" styleClass="centerAlign" minWidth="110" text="경도" />
+                                <TableColumn fx:id="deleteDataTableColumn" styleClass="centerAlign" minWidth="50" text="제거" />
+                            </columns>
+                            <GridPane.margin>
+                                <Insets bottom="10" top="10" />
+                            </GridPane.margin>
+                        </TableView>
+                        <HBox alignment="CENTER" GridPane.rowIndex="2" GridPane.columnIndex="1" maxHeight="Infinity" maxWidth="Infinity">
+                            <children>
+                                <Button onAction="#prevPage" text="◀"/>
+                                <Label text="   "/>
+                                <NumberField alignment="CENTER" prefWidth="90" fx:id="nowPageField" text="0" onKeyPressed="#jumpPageKeyPress"/>
+                                <Label text=" / "/>
+                                <Label fx:id="maxPageLabel" text="0"/>
+                                <Label text="   "/>
+                                <Button onAction="#nextPage" text="▶"/>
+                            </children>
+                            <GridPane.margin>
+                                <Insets bottom="10" />
+                            </GridPane.margin>
+                        </HBox>
+                        <TabPane fx:id="tabPane" GridPane.rowIndex="4" GridPane.columnIndex="1" tabClosingPolicy="UNAVAILABLE">
+                            <tabs>
+                                <Tab text="데이터 추가">
+                                    <content>
+                                        <GridPane styleClass="orangeBackground">
+                                            <columnConstraints>
+                                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="2" />
+                                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="15" />
+                                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="33" />
+                                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="15" />
+                                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="33" />
+                                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="2" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints valignment="CENTER" minHeight="10" percentHeight="6" />
+                                                <RowConstraints valignment="CENTER" minHeight="10" percentHeight="66" />
+                                                <RowConstraints valignment="CENTER" minHeight="10" percentHeight="22" />
+                                                <RowConstraints valignment="CENTER" minHeight="10" percentHeight="6" />
+                                            </rowConstraints>
+                                            <children>
+                                                <ScrollPane fitToWidth="true" prefWidth="Infinity" GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.columnSpan="4">
+                                                    <VBox>
+                                                        <Label text=" "/>
+                                                        <HBox>
+                                                            <Label maxHeight="Infinity" text="  카테고리 : "/>
+                                                            <MenuButton fx:id="createCategoryMenu" text=" - ">
+                                                                <items>
+                                                                </items>
+                                                            </MenuButton>
+                                                        </HBox>
+                                                        <Label text=" "/>
+                                                        <HBox>
+                                                            <Label maxHeight="Infinity" text="  엘리먼트 : "/>
+                                                            <MenuButton fx:id="createElementMenu" text=" - ">
+                                                                <items>
+                                                                </items>
+                                                            </MenuButton>
+                                                        </HBox>
+                                                        <Label text=" "/>
+                                                        <HBox>
+                                                            <Label text="  날　　짜 : "/>
+                                                            <DateTimePicker fx:id="startDate"/>
+                                                            <Label text=" ~ "></Label>
+                                                            <DateTimePicker fx:id="endDate"/>
+                                                        </HBox>
+                                                        <Label text=" "/>
+                                                        <HBox>
+                                                            <Label text="  개　　수 : "/>
+                                                            <NumberField text="1" fx:id="createAmount"/>
+                                                        </HBox>
+                                                        <Label text=" "/>
+                                                        <HBox>
+                                                            <Label text="  위　　도 : "/>
+                                                            <RealField text="0" fx:id="startLatitude"/>
+                                                            <Label text=" ~ "></Label>
+                                                            <RealField text="0" fx:id="endLatitude"/>
+                                                        </HBox>
+                                                        <Label text=" "/>
+                                                        <HBox>
+                                                            <Label text="  경　　도 : "/>
+                                                            <RealField text="0" fx:id="startLongitude"/>
+                                                            <Label text=" ~ "></Label>
+                                                            <RealField text="0" fx:id="endLongitude"/>
+                                                        </HBox>
+                                                        <Label text=" "/>
+                                                    </VBox>
+                                                </ScrollPane>
+
+                                                <Button fx:id="createButton" GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.columnSpan="4" text="모델 수정 필요" prefWidth="300" disable="true" onAction="#createData"/>
+                                                <Button GridPane.halignment="RIGHT" fx:id="createRandomDataButton" styleClass="optionButton" GridPane.rowIndex="2" GridPane.columnIndex="4" disable="true" onAction="#createRandomData"><tooltip><Tooltip text="임의 데이터 생성" /></tooltip></Button>
+                                            </children>
+                                        </GridPane>
+                                    </content>
+                                </Tab>
+                                <Tab text="추가정보 등록/제거">
+                                    <content>
+                                        <GridPane styleClass="orangeBackground">
+                                            <columnConstraints>
+                                                <ColumnConstraints halignment="CENTER" minWidth="5" percentWidth="2" />
+                                                <ColumnConstraints halignment="CENTER" minWidth="5" percentWidth="96" />
+                                                <ColumnConstraints halignment="CENTER" minWidth="5" percentWidth="2" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints valignment="CENTER" minHeight="5" percentHeight="6" />
+                                                <RowConstraints valignment="CENTER" minHeight="5" percentHeight="58" />
+                                                <RowConstraints valignment="CENTER" minHeight="5" percentHeight="30" />
+                                                <RowConstraints valignment="CENTER" minHeight="5" percentHeight="6" />
+                                            </rowConstraints>
+                                            <children>
+
+                                                <TableView fx:id="additionalDataListTable" GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.columnSpan="2" maxHeight="Infinity">
+                                                    <columns>
+                                                        <TableColumn fx:id="additionalDataListNameTableColumn" styleClass="centerAlign" minWidth="100" prefWidth="50" text="이름" />
+                                                        <TableColumn fx:id="additionalDataListTypeTableColumn" styleClass="centerAlign" minWidth="125" text="타입" />
+                                                        <TableColumn fx:id="additionalDataListValueTableColumn" styleClass="centerAlign" minWidth="250" text="기본 값" />
+                                                        <TableColumn fx:id="additionalDataListDeleteTableColumn" styleClass="centerAlign" minWidth="100" text="제거" />
+                                                    </columns>
+                                                    <GridPane.margin>
+                                                        <Insets bottom="10" top="10" />
+                                                    </GridPane.margin>
+                                                </TableView>
+
+                                                <GridPane GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.columnSpan="4">
+                                                    <columnConstraints>
+                                                        <ColumnConstraints halignment="CENTER" minWidth="1" percentWidth="8" />
+                                                        <ColumnConstraints halignment="CENTER" minWidth="1" percentWidth="30" />
+
+                                                        <ColumnConstraints halignment="CENTER" minWidth="1" percentWidth="1" />
+
+                                                        <ColumnConstraints halignment="CENTER" minWidth="1" percentWidth="13" />
+                                                        <ColumnConstraints halignment="CENTER" minWidth="1" percentWidth="10" />
+
+                                                        <ColumnConstraints halignment="CENTER" minWidth="1" percentWidth="1" />
+
+                                                        <ColumnConstraints halignment="CENTER" minWidth="1" percentWidth="10" />
+                                                        <ColumnConstraints halignment="CENTER" minWidth="1" percentWidth="27" />
+                                                    </columnConstraints>
+                                                    <rowConstraints>
+                                                        <RowConstraints valignment="CENTER" percentHeight="50" minHeight="5" />
+                                                        <RowConstraints valignment="CENTER" percentHeight="50" minHeight="5" />
+                                                    </rowConstraints>
+                                                    <children>
+                                                        <Label GridPane.columnIndex="0" text="이름 : " GridPane.halignment="RIGHT"/>
+                                                        <TextField GridPane.columnIndex="1" fx:id="newAdditionalDataName" promptText="추가정보 이름을 입력 하세요" onKeyPressed="#keyPush"/>
+                                                        <Label GridPane.columnIndex="3" text="기준 타입 : " GridPane.halignment="RIGHT"/>
+                                                        <MenuButton GridPane.halignment="LEFT" GridPane.columnIndex="4" fx:id="typeMenu" text="문자열">
+                                                            <items>
+                                                                <MenuItem onAction="#setDefaultTextType" text="문자열" />
+                                                                <MenuItem onAction="#setDefaultIntegerType" text="정수" />
+                                                                <MenuItem onAction="#setDefaultRealType" text="실수" />
+                                                                <MenuItem onAction="#setDefaultBooleanType" text="이진수" />
+                                                            </items>
+                                                        </MenuButton>
+                                                        <Label GridPane.columnIndex="6" text="기본 값 : " GridPane.halignment="RIGHT"/>
+                                                        <TextField GridPane.columnIndex="7" fx:id="newPointDefaultText" promptText="공백 시 기본값 NULL"/>
+                                                        <NumberField GridPane.columnIndex="7" fx:id="newPointDefaultInteger" visible="false" text="0" promptText="공백 시 기본값 0"/>
+                                                        <RealField GridPane.columnIndex="7" fx:id="newPointDefaultReal" visible="false" text="0.0" promptText="공백 시 기본값 0"/>
+                                                        <MenuButton GridPane.halignment="LEFT" GridPane.columnIndex="7" fx:id="newPointDefaultBoolean" visible="false" text="false">
+                                                            <items>
+                                                                <MenuItem onAction="#setDefaultTrue" text="true" />
+                                                                <MenuItem onAction="#setDefaultFalse" text="false" />
+                                                            </items>
+                                                        </MenuButton>
+
+
+                                                        <GridPane GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="8">
+                                                            <columnConstraints>
+                                                                <ColumnConstraints halignment="LEFT" minWidth="1" percentWidth="50" />
+                                                                <ColumnConstraints halignment="RIGHT" minWidth="1" percentWidth="50" />
+                                                            </columnConstraints>
+                                                            <rowConstraints>
+                                                                <RowConstraints valignment="CENTER" percentHeight="100" minHeight="5" />
+                                                            </rowConstraints>
+                                                            <children>
+                                                                <MenuButton fx:id="newAdditionalDataCategory" text=" - " minWidth="150" textAlignment="CENTER" alignment="CENTER">
+                                                                    <items>
+                                                                    </items>
+                                                                </MenuButton>
+                                                                <Button fx:id="createAdditionalDataButton" GridPane.columnIndex="1" text="추가" minWidth="150" onAction="#addAdditionalData" disable="true"/>
+                                                            </children>
+                                                        </GridPane>
+                                                    </children>
+                                                </GridPane>
+                                            </children>
+                                        </GridPane>
+                                    </content>
+                                </Tab>
+                                <Tab fx:id="additionalDataTab" text="추가정보" disable="true">
+                                    <content>
+                                        <GridPane styleClass="orangeBackground">
+                                        <columnConstraints>
+                                            <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="2" />
+                                            <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="80" />
+                                            <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="16" />
+                                            <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="2" />
+                                        </columnConstraints>
+                                        <rowConstraints>
+                                            <RowConstraints valignment="CENTER" minHeight="10" percentHeight="6" />
+                                            <RowConstraints valignment="CENTER" minHeight="10" percentHeight="80" />
+                                            <RowConstraints valignment="CENTER" minHeight="10" percentHeight="8" />
+                                            <RowConstraints valignment="CENTER" minHeight="10" percentHeight="6" />
+                                        </rowConstraints>
+                                        <children>
+                                            <TableView fx:id="additionalDataTable" GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.columnSpan="2" maxHeight="Infinity">
+                                                <columns>
+                                                    <TableColumn fx:id="additionalDataNameTableColumn" styleClass="centerAlign" minWidth="100" prefWidth="50" text="추가정보" />
+                                                    <TableColumn fx:id="additionalDataTypeTableColumn" styleClass="centerAlign" minWidth="125" text="타입" />
+                                                    <TableColumn fx:id="additionalDataValueTableColumn" styleClass="centerAlign" minWidth="250" text="값" />
+                                                </columns>
+                                                <GridPane.margin>
+                                                    <Insets bottom="10" top="10" />
+                                                </GridPane.margin>
+                                            </TableView>
+                                            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="additionalDataTextField" disable="true" onKeyPressed="#keyPush"/>
+                                            <NumberField GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="additionalDataNumberField" visible="false" onKeyPressed="#keyPush"/>
+                                            <RealField GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="additionalDataRealField" visible="false" onKeyPressed="#keyPush"/>
+                                            <Button GridPane.columnIndex="2" GridPane.rowIndex="2" fx:id="additionalDataEditButton" text="값 변경" prefWidth="Infinity" disable="true" onAction="#updateAdditionalData"/>
+                                        </children>
+                                        </GridPane>
+                                    </content>
+                                </Tab>
+                            </tabs>
+                        </TabPane>
+                    </children>
+                </GridPane>
+            </children>
+        </HBox>
+
+        <GridPane GridPane.rowIndex="0">
+            <columnConstraints>
+                <ColumnConstraints minWidth="400" percentWidth="50" />
+                <ColumnConstraints minWidth="400" percentWidth="50" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints valignment="CENTER" minHeight="10" prefHeight="100" />
+            </rowConstraints>
+            <children>
+                <HBox alignment="CENTER_LEFT" GridPane.columnIndex="0">
+                    <!--<GridPane.margin>-->
+                        <!--<Insets bottom="5" left="20" right="10" top="5" />-->
+                    <!--</GridPane.margin>-->
+                    <!--<children>-->
+                        <!--<Label text="데이터 편집" />-->
+                    <!--</children>-->
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" GridPane.columnIndex="1" spacing="10">
+                    <children>
+                        <Button id="screenshot" styleClass="topIcon" onAction="#screenshot"><tooltip><Tooltip text="스크린샷" /></tooltip></Button>
+                        <Button fx:id="alwaysTop" styleClass="topIcon" onAction="#alwaysTop"><tooltip><Tooltip text="항상 위" /></tooltip></Button>
+                        <Button id="minimumButton" styleClass="topIcon" onAction="#minimize"><tooltip><Tooltip text="최소화" /></tooltip></Button>
+                        <Button id="closeButton" styleClass="topIcon" onAction="#close"><tooltip><Tooltip text="창 닫기" /></tooltip></Button>
+                    </children>
+                    <GridPane.margin>
+                        <Insets bottom="5" left="10" right="10" top="5"/>
+                    </GridPane.margin>
+                </HBox>
+            </children>
+        </GridPane>
+    </children>
+</GridPane>

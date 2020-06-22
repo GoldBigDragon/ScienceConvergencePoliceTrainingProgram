@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.web.WebView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import goldbigdragon.github.io.node.NumberField?>
+<GridPane fx:id="mainPane" alignment="CENTER" stylesheets="/resources/css/basic.css,/resources/css/criminalstatisticsanalysis/main.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goldbigdragon.github.io.function.criminalstatisticsanalysis.main.controller.MainController" onMouseDragged="#mouseDragged" onMousePressed="#mousePressed">
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="100" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="6.5" minHeight="10" />
+        <RowConstraints percentHeight="93.5" minHeight="10" valignment="CENTER"/>
+    </rowConstraints>
+    <children>
+        <HBox alignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+            <children>
+                <GridPane minWidth="1000" minHeight="800">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="2" />
+                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="43" />
+                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="1" />
+                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="52" />
+                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="2" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="5" />
+                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="8" />
+                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="8" />
+                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="60" />
+                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="15" />
+                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="6" />
+                    </rowConstraints>
+                    <children>
+                        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1" style="-fx-background-color: rgb(242,242,242);">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="12" />
+                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="12" />
+                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="76" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints valignment="CENTER" minHeight="10" percentHeight="100" />
+                            </rowConstraints>
+                            <padding>
+                                <Insets bottom="5" left="5" right="5" top="5" />
+                            </padding>
+                            <children>
+                                <Button styleClass="miniOptionButton" id="save" GridPane.columnIndex="0" onAction="#save"><tooltip><Tooltip text="모델 및 데이터 다른 이름으로 저장" /></tooltip></Button>
+                                <Button styleClass="miniOptionButton" id="load" GridPane.columnIndex="1" onAction="#load"><tooltip><Tooltip text="모델 및 데이터 불러오기" /></tooltip></Button>
+                            </children>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="15" />
+                                <ColumnConstraints halignment="LEFT" minWidth="10" percentWidth="55" />
+                                <ColumnConstraints halignment="LEFT" minWidth="10" percentWidth="15" />
+                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="15" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints valignment="CENTER" minHeight="10" percentHeight="100" />
+                            </rowConstraints>
+                            <padding>
+                                <Insets bottom="5" left="5" right="5" top="5" />
+                            </padding>
+                            <children>
+                                <Label text="정렬 : "/>
+                                <MenuButton fx:id="sortTypeMenuButton" onAction="#checkSound" popupSide="BOTTOM" text="1년 단위 정렬" GridPane.columnIndex="1">
+                                    <items>
+                                        <MenuItem onAction="#sortAll" text="전체 기간 통합" />
+                                        <MenuItem onAction="#sortYear" text="1년 단위" />
+                                        <MenuItem onAction="#sortMonth" text="월별" />
+                                        <MenuItem onAction="#sortWeek" text="요일별" />
+                                        <MenuItem onAction="#sortHour" text="시간별" />
+                                    </items>
+                                    <tooltip><Tooltip text="정렬 시간대 변경" /></tooltip>
+                                </MenuButton>
+                                <Button styleClass="optionButton" id="modelEdit" GridPane.columnIndex="2" onAction="#modelEditorOpen"><tooltip><Tooltip text="모델 수정" /></tooltip></Button>
+                                <Button styleClass="optionButton" id="dataEdit" GridPane.columnIndex="3" onAction="#dataEditorOpen"><tooltip><Tooltip text="데이터 편집" /></tooltip></Button>
+                            </children>
+                        </GridPane>
+                        <TreeView GridPane.valignment="CENTER" GridPane.halignment="CENTER" fx:id="treeView" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.rowSpan="2"/>
+                        <GridPane GridPane.columnIndex="3" GridPane.rowIndex="1" style="-fx-background-color: rgb(242,242,242);">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="RIGHT" minWidth="10" percentWidth="100" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints valignment="CENTER" minHeight="10" percentHeight="100" />
+                            </rowConstraints>
+                            <padding>
+                                <Insets bottom="5" left="5" right="5" top="5" />
+                            </padding>
+                            <children>
+                                <HBox alignment="CENTER_RIGHT" spacing="10">
+                                    <padding>
+                                        <Insets bottom="5" left="5" right="5" top="5" />
+                                    </padding>
+                                    <Button id="openVisualizationFile" styleClass="optionButton" onAction="#openVisualizationFile"><tooltip><Tooltip text="생성된 시각화 파일을 열람합니다." /></tooltip></Button>
+                                </HBox>
+                            </children>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.rowSpan="2" fx:id="contents">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="100" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints valignment="CENTER" minHeight="10" percentHeight="100" />
+                            </rowConstraints>
+                            <children>
+                                <WebView fx:id="map" maxWidth="550" maxHeight="550" prefWidth="550" prefHeight="550" visible="true"></WebView>
+
+                                <TableView fx:id="publicTable" maxWidth="550" maxHeight="550" prefWidth="550" prefHeight="550" visible="false">
+                                    <columns>
+                                        <TableColumn fx:id="publicTableNumColumn" styleClass="centerAlign" minWidth="50" prefWidth="50" text="순위" />
+                                        <TableColumn fx:id="publicTableNameColumn" styleClass="centerAlign" minWidth="100" prefWidth="100" text="변수명" />
+                                        <TableColumn fx:id="publicTableValueColumn" styleClass="centerAlign" minWidth="100" text="중요도" />
+                                    </columns>
+                                    <GridPane.margin>
+                                        <Insets bottom="10" top="10" />
+                                    </GridPane.margin>
+                                </TableView >
+
+                            </children>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="3" GridPane.rowIndex="4" fx:id="calculateGrid">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="80" />
+                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="20" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints valignment="CENTER" minHeight="10" percentHeight="100" />
+                            </rowConstraints>
+                            <children>
+                                <GridPane styleClass="whiteBackground">
+                                    <columnConstraints>
+                                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="100" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="20" />
+                                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="20" />
+                                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="20" />
+                                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="20" />
+                                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="20" />
+                                    </rowConstraints>
+                                    <children>
+                                        <HBox fillHeight="true" GridPane.rowIndex="1" alignment="CENTER_LEFT">
+                                            <Label text="    격자 편성 :  "/>
+                                            <NumberField text="5" fx:id="rowNmberField" prefWidth="75" alignment="CENTER_RIGHT" onKeyReleased="#rowAndColumnChange"/>
+                                            <Label text="행  "/>
+                                            <NumberField text="5" fx:id="columnNmberField" prefWidth="75" alignment="CENTER_RIGHT" onKeyReleased="#rowAndColumnChange"/>
+                                            <Label text="열"/>
+                                        </HBox>
+                                        <HBox fillHeight="true" GridPane.rowIndex="2" alignment="CENTER_LEFT">
+                                            <Label text="    (가로 "/>
+                                            <Label text="0m" fx:id="widthLabel"/>
+                                            <Label text=", 세로 "/>
+                                            <Label text="0m" fx:id="heightLabel"/>
+                                            <Label text=", 넓이 "/>
+                                            <Label text="0㎡" fx:id="areaLabel"/>
+                                            <Label text="의 격자 "/>
+                                            <Label text="1" fx:id="arrayCount"/>
+                                            <Label text="개)"/>
+                                        </HBox>
+                                        <HBox fillHeight="true" GridPane.rowIndex="3" alignment="CENTER_LEFT">
+                                            <Label text="    시각화 대상 : "/>
+                                            <Label text="0" fx:id="targetAmountLabel"/>
+                                            <Label text="개     "/>
+                                            <Button fx:id="visualizationTargetEditButton" onAction="#visualizationTargetOpen">편집</Button>
+                                        </HBox>
+                                    </children>
+                                </GridPane>
+
+                                <GridPane GridPane.columnIndex="1" styleClass="whiteBackground">
+                                    <columnConstraints>
+                                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="100" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="100" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Button fx:id="calculateButton" disable="true" onAction="#calculate"><tooltip><Tooltip text="선택한 시각화 대상에 대한&#013;통계 결과를 나타냅니다." /></tooltip></Button>
+                                    </children>
+                                </GridPane>
+                            </children>
+                        </GridPane>
+                    </children>
+                </GridPane>
+            </children>
+        </HBox>
+        <GridPane GridPane.rowIndex="0">
+            <columnConstraints>
+                <ColumnConstraints minWidth="500" percentWidth="50" />
+                <ColumnConstraints minWidth="500" percentWidth="50" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints valignment="CENTER" minHeight="10" prefHeight="100" />
+            </rowConstraints>
+            <children>
+                <HBox alignment="CENTER_LEFT" GridPane.columnIndex="0">
+                    <!--<GridPane.margin>-->
+                        <!--<Insets bottom="5" left="20" right="10" top="5" />-->
+                    <!--</GridPane.margin>-->
+                    <!--<children>-->
+                        <!--<Label text="범죄 통계 분석" />-->
+                    <!--</children>-->
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" GridPane.columnIndex="1" spacing="10">
+                    <children>
+                        <Button id="screenshot" styleClass="topIcon" onAction="#screenshot"><tooltip><Tooltip text="스크린샷" /></tooltip></Button>
+                        <Button fx:id="alwaysTop" styleClass="topIcon" onAction="#alwaysTop"><tooltip><Tooltip text="항상 위" /></tooltip></Button>
+                        <Button id="minimumButton" styleClass="topIcon" onAction="#minimize"><tooltip><Tooltip text="최소화" /></tooltip></Button>
+                        <Button id="closeButton" styleClass="topIcon" onAction="#shutdown"><tooltip><Tooltip text="창 닫기" /></tooltip></Button>
+                    </children>
+                    <GridPane.margin>
+                        <Insets bottom="5" left="10" right="10" top="5"/>
+                    </GridPane.margin>
+                </HBox>
+            </children>
+        </GridPane>
+    </children>
+</GridPane>

@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.web.WebView?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import goldbigdragon.github.io.node.RealField?>
+<?import goldbigdragon.github.io.node.NumberField?>
+<?import javafx.scene.control.CheckBox?>
+<GridPane fx:id="mainPane" alignment="CENTER" stylesheets="/resources/css/basic.css,/resources/css/criminalstatisticsanalysis/visualizationMain.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goldbigdragon.github.io.function.criminalstatisticsanalysis.visualization.controller.VisualizationMainController" onMouseDragged="#mouseDragged" onMousePressed="#mousePressed">
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="100" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="6.5" minHeight="10" />
+        <RowConstraints percentHeight="93.5" minHeight="10" valignment="CENTER"/>
+    </rowConstraints>
+    <children>
+        <HBox alignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+            <children>
+                <GridPane minWidth="1000" minHeight="800">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="2" />
+                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="24" />
+                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="2" />
+                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="70" />
+                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="2" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="6" />
+                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="8" />
+                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="80" />
+                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="6" />
+                    </rowConstraints>
+                    <children>
+                        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.columnSpan="3" style="-fx-background-color: rgb(242,242,242);">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="50" />
+                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="50" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints valignment="CENTER" minHeight="10" percentHeight="100" />
+                            </rowConstraints>
+                            <children>
+                                <HBox GridPane.columnIndex="0" alignment="CENTER_LEFT" spacing="10">
+                                    <padding>
+                                        <Insets bottom="5" left="5" right="5" top="5" />
+                                    </padding>
+                                    <Button id="save" styleClass="optionButton" onAction="#save"><tooltip><Tooltip text="시각화 데이터 다른 이름으로 저장" /></tooltip></Button>
+                                    <Button id="openVisualizationFile" styleClass="optionButton" onAction="#load"><tooltip><Tooltip text="시각화 데이터 불러오기" /></tooltip></Button>
+                                </HBox>
+                                <HBox GridPane.columnIndex="1" alignment="CENTER_RIGHT" spacing="10">
+                                    <padding>
+                                        <Insets bottom="5" left="5" right="5" top="5" />
+                                    </padding>
+                                    <Button id="showMap" styleClass="optionButton" onAction="#showMap"><tooltip><Tooltip text="시각화 - 지도" /></tooltip></Button>
+                                    <Button id="showTable" styleClass="optionButton" onAction="#showTable"><tooltip><Tooltip text="시각화 - 표" /></tooltip></Button>
+                                    <Button id="showPieChart" styleClass="optionButton" onAction="#showPieChart"><tooltip><Tooltip text="시각화 - 파이 차트" /></tooltip></Button>
+                                    <Button id="showLineChart" styleClass="optionButton" onAction="#showLineGraph"><tooltip><Tooltip text="시각화 - 꺾은 선 그래프" /></tooltip></Button>
+                                    <Button id="showGuide" styleClass="optionButton" onAction="#showBrief"><tooltip><Tooltip text="브리핑" /></tooltip></Button>
+                                </HBox>
+                            </children>
+                        </GridPane>
+                        <GridPane GridPane.rowIndex="2" GridPane.columnIndex="1">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="100" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints valignment="CENTER" minHeight="10" percentHeight="92" />
+                                <RowConstraints valignment="CENTER" minHeight="10" percentHeight="3" />
+                                <RowConstraints valignment="CENTER" minHeight="10" percentHeight="5" />
+                            </rowConstraints>
+                            <GridPane.margin>
+                                <Insets bottom="10" top="10"/>
+                            </GridPane.margin>
+                            <children>
+                                <GridPane>
+                                    <columnConstraints>
+                                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="100" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="100" />
+                                    </rowConstraints>
+                                    <children>
+                                        <fx:define>
+                                            <ToggleGroup fx:id="sectorGroup"/>
+                                            <ToggleGroup fx:id="orderByGroup"/>
+                                            <ToggleGroup fx:id="timeGroup"/>
+                                            <ToggleGroup fx:id="calcGroup"/>
+                                        </fx:define>
+                                        <Accordion fx:id="accordion">
+                                            <panes>
+                                                <TitledPane fx:id="sectorSelectPane" animated="false" text="지역" disable="true">
+                                                    <content>
+                                                        <ScrollPane>
+                                                            <padding>
+                                                                <Insets left="20"/>
+                                                            </padding>
+                                                            <content>
+                                                                <VBox>
+                                                                    <VBox.margin>
+                                                                        <Insets left="10" top="10" right="10"/>
+                                                                    </VBox.margin>
+                                                                    <HBox alignment="CENTER_LEFT">
+                                                                        <RadioButton fx:id="allSectorRadio" toggleGroup="$sectorGroup" text="전체" selected="true"  onAction="#sectorUnSelected"/>
+                                                                    </HBox>
+                                                                    <HBox alignment="CENTER_LEFT">
+                                                                        <RadioButton toggleGroup="$sectorGroup" onAction="#sectorSelected" text="섹터    "/>
+                                                                        <NumberField fx:id="sectorNumberField" text="1" disable="true" maxWidth="100"/>
+                                                                    </HBox>
+                                                                </VBox>
+                                                            </content>
+                                                        </ScrollPane>
+                                                    </content>
+                                                </TitledPane>
+                                                <TitledPane fx:id="orderByPane" animated="false" text="정렬" disable="true">
+                                                    <content>
+                                                        <ScrollPane>
+                                                            <padding>
+                                                                <Insets left="20"/>
+                                                            </padding>
+                                                            <content>
+                                                                <VBox>
+                                                                    <VBox.margin>
+                                                                        <Insets left="10" top="10" right="10"/>
+                                                                    </VBox.margin>
+                                                                    <HBox alignment="CENTER_LEFT">
+                                                                        <RadioButton fx:id="ascendingRadio" toggleGroup="$orderByGroup" text="오름차순" selected="true"/>
+                                                                    </HBox>
+                                                                    <HBox alignment="CENTER_LEFT">
+                                                                        <RadioButton toggleGroup="$orderByGroup" text="내림차순" selected="true"/>
+                                                                    </HBox>
+                                                                    <HBox fx:id="limitHbox" alignment="CENTER_LEFT">
+                                                                        <Label text="표시량 : "/>
+                                                                        <NumberField fx:id="limitField" text="50" maxWidth="100"/>
+                                                                        <Label text="개"/>
+                                                                    </HBox>
+                                                                </VBox>
+                                                            </content>
+                                                        </ScrollPane>
+                                                    </content>
+                                                </TitledPane>
+                                                <TitledPane animated="false" text="시간">
+                                                    <content>
+                                                        <ScrollPane>
+                                                            <padding>
+                                                                <Insets left="20"/>
+                                                            </padding>
+                                                            <content>
+                                                                <VBox>
+                                                                    <VBox.margin>
+                                                                        <Insets left="10" top="10" right="10"/>
+                                                                    </VBox.margin>
+                                                                    <HBox alignment="CENTER_LEFT">
+                                                                        <RadioButton fx:id="timeYearRadio" toggleGroup="$timeGroup" text="년    "/>
+                                                                        <MenuButton fx:id="timeMinYear">
+                                                                            <items/>
+                                                                        </MenuButton>
+                                                                        <Label fx:id="timeYearSlash" text=" ~ "/>
+                                                                        <MenuButton fx:id="timeMaxYear">
+                                                                            <items/>
+                                                                        </MenuButton>
+                                                                    </HBox>
+                                                                    <HBox alignment="CENTER_LEFT">
+                                                                        <RadioButton fx:id="timeMonthRadio" toggleGroup="$timeGroup" text="월    "/>
+                                                                        <MenuButton fx:id="timeMinMonth" text="01">
+                                                                            <items>
+                                                                                <MenuItem onAction="#timeMinMonthSelect" text="01"/>
+                                                                                <MenuItem onAction="#timeMinMonthSelect" text="02"/>
+                                                                                <MenuItem onAction="#timeMinMonthSelect" text="03"/>
+                                                                                <MenuItem onAction="#timeMinMonthSelect" text="04"/>
+                                                                                <MenuItem onAction="#timeMinMonthSelect" text="05"/>
+                                                                                <MenuItem onAction="#timeMinMonthSelect" text="06"/>
+                                                                                <MenuItem onAction="#timeMinMonthSelect" text="07"/>
+                                                                                <MenuItem onAction="#timeMinMonthSelect" text="08"/>
+                                                                                <MenuItem onAction="#timeMinMonthSelect" text="09"/>
+                                                                                <MenuItem onAction="#timeMinMonthSelect" text="10"/>
+                                                                                <MenuItem onAction="#timeMinMonthSelect" text="11"/>
+                                                                                <MenuItem onAction="#timeMinMonthSelect" text="12"/>
+                                                                            </items>
+                                                                        </MenuButton>
+                                                                        <Label fx:id="timeMonthSlash" text=" ~ "/>
+                                                                        <MenuButton fx:id="timeMaxMonth" text="12">
+                                                                            <items>
+                                                                                <MenuItem onAction="#timeMaxMonthSelect" text="01"/>
+                                                                                <MenuItem onAction="#timeMaxMonthSelect" text="02"/>
+                                                                                <MenuItem onAction="#timeMaxMonthSelect" text="03"/>
+                                                                                <MenuItem onAction="#timeMaxMonthSelect" text="04"/>
+                                                                                <MenuItem onAction="#timeMaxMonthSelect" text="05"/>
+                                                                                <MenuItem onAction="#timeMaxMonthSelect" text="06"/>
+                                                                                <MenuItem onAction="#timeMaxMonthSelect" text="07"/>
+                                                                                <MenuItem onAction="#timeMaxMonthSelect" text="08"/>
+                                                                                <MenuItem onAction="#timeMaxMonthSelect" text="09"/>
+                                                                                <MenuItem onAction="#timeMaxMonthSelect" text="10"/>
+                                                                                <MenuItem onAction="#timeMaxMonthSelect" text="11"/>
+                                                                                <MenuItem onAction="#timeMaxMonthSelect" text="12"/>
+                                                                            </items>
+                                                                        </MenuButton>
+                                                                    </HBox>
+                                                                    <HBox alignment="CENTER_LEFT">
+                                                                        <RadioButton fx:id="timeWeekRadio" toggleGroup="$timeGroup" text="요일  "/>
+                                                                        <MenuButton fx:id="timeMinWeek" text="일">
+                                                                            <items>
+                                                                                <MenuItem onAction="#timeMinWeekSelect" text="일"/>
+                                                                                <MenuItem onAction="#timeMinWeekSelect" text="월"/>
+                                                                                <MenuItem onAction="#timeMinWeekSelect" text="화"/>
+                                                                                <MenuItem onAction="#timeMinWeekSelect" text="수"/>
+                                                                                <MenuItem onAction="#timeMinWeekSelect" text="목"/>
+                                                                                <MenuItem onAction="#timeMinWeekSelect" text="금"/>
+                                                                                <MenuItem onAction="#timeMinWeekSelect" text="토"/>
+                                                                            </items>
+                                                                        </MenuButton>
+                                                                        <Label fx:id="timeWeekSlash" text=" ~ "/>
+                                                                        <MenuButton fx:id="timeMaxWeek" text="토">
+                                                                            <items>
+                                                                                <MenuItem onAction="#timeMaxWeekSelect" text="일"/>
+                                                                                <MenuItem onAction="#timeMaxWeekSelect" text="월"/>
+                                                                                <MenuItem onAction="#timeMaxWeekSelect" text="화"/>
+                                                                                <MenuItem onAction="#timeMaxWeekSelect" text="수"/>
+                                                                                <MenuItem onAction="#timeMaxWeekSelect" text="목"/>
+                                                                                <MenuItem onAction="#timeMaxWeekSelect" text="금"/>
+                                                                                <MenuItem onAction="#timeMaxWeekSelect" text="토"/>
+                                                                            </items>
+                                                                        </MenuButton>
+                                                                    </HBox>
+                                                                    <HBox alignment="CENTER_LEFT">
+                                                                        <RadioButton fx:id="timeHourRadio" toggleGroup="$timeGroup" text="시간  "/>
+                                                                        <MenuButton fx:id="timeMinHour" text="00">
+                                                                            <items>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="00"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="01"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="02"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="03"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="04"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="05"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="06"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="07"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="08"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="09"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="10"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="11"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="12"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="13"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="14"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="15"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="16"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="17"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="18"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="19"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="20"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="21"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="22"/>
+                                                                                <MenuItem onAction="#timeMinHourSelect" text="23"/>
+                                                                            </items>
+                                                                        </MenuButton>
+                                                                        <Label fx:id="timeHourSlash" text=" ~ "/>
+                                                                        <MenuButton fx:id="timeMaxHour" text="23">
+                                                                            <items>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="00"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="01"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="02"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="03"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="04"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="05"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="06"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="07"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="08"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="09"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="10"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="11"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="12"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="13"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="14"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="15"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="16"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="17"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="18"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="19"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="20"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="21"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="22"/>
+                                                                                <MenuItem onAction="#timeMaxHourSelect" text="23"/>
+                                                                            </items>
+                                                                        </MenuButton>
+                                                                    </HBox>
+                                                                    <HBox alignment="CENTER_LEFT">
+                                                                        <RadioButton fx:id="timeAllRadio" toggleGroup="$timeGroup" text="전체" selected="true"/>
+                                                                    </HBox>
+                                                                </VBox>
+                                                            </content>
+                                                        </ScrollPane>
+                                                    </content>
+                                                </TitledPane>
+                                                <TitledPane animated="false" text="계산 방법">
+                                                    <content>
+                                                        <ScrollPane>
+                                                            <padding>
+                                                                <Insets left="20"/>
+                                                            </padding>
+                                                            <content>
+                                                                <VBox>
+                                                                    <VBox.margin>
+                                                                        <Insets left="10" top="10" right="10"/>
+                                                                    </VBox.margin>
+                                                                    <RadioButton fx:id="absoluteCalcRadio" text="절대 건수" toggleGroup="$calcGroup" selected="true" onAction="#showTimeDetail"/>
+                                                                    <RadioButton text="발생 가능성" toggleGroup="$calcGroup" onAction="#hideTimeDetail"/>
+                                                                    <VBox visible="false" fx:id="appearBonusVbox">
+                                                                        <VBox.margin>
+                                                                            <Insets left="10" top="10" right="10"/>
+                                                                        </VBox.margin>
+                                                                        <Label text="발생 시간차 보너스"><tooltip><Tooltip text="시각화 대상과의 발생 시간 간격이 짧은&#013;환경변수가 많을 수록 발생확률이 상승합니다." /></tooltip></Label>
+                                                                        <RealField fx:id="timeAvgBonus" text="0.2"><tooltip><Tooltip text="시각화 대상과의 발생 시간 간격이 짧은&#013;환경변수가 많을 수록 발생확률이 상승합니다." /></tooltip></RealField>
+                                                                        <Label text="발생 거리 보너스"><tooltip><Tooltip text="섹터 내 시각화 대상과의 발생 거리가 짧은&#013;환경변수가 많을 수록 발생확률이 상승합니다." /></tooltip></Label>
+                                                                        <RealField fx:id="distanceAvgBonus" text="1000"><tooltip><Tooltip text="섹터 내 시각화 대상과의 발생 거리가 짧은&#013;환경변수가 많을 수록 발생확률이 상승합니다." /></tooltip></RealField>
+                                                                        <Label text="지역 간 발생 시간차 보너스"><tooltip><Tooltip text="섹터 내 시각화 대상과의 발생 시간 간격이 짧은&#013;환경변수가 많을 수록 발생확률이 상승합니다." /></tooltip></Label>
+                                                                        <RealField fx:id="sectorTimeAvgBonus" text="1.0"><tooltip><Tooltip text="섹터 내 시각화 대상과의 발생 시간 간격이 짧은&#013;환경변수가 많을 수록 발생확률이 상승합니다." /></tooltip></RealField>
+                                                                        <Label text="인접지역 보너스"><tooltip><Tooltip text="발생률이 높을 수록 인접 섹터의 발생확률이 함께 상승합니다." /></tooltip></Label>
+                                                                        <RealField fx:id="adjacentSectorBonus" text="0.3"><tooltip><Tooltip text="발생률이 높을 수록 인접 섹터의 발생확률이 함께 상승합니다." /></tooltip></RealField>
+                                                                        <CheckBox fx:id="equalizerCheckBox" text="평등화 계산" selected="false"><tooltip><Tooltip text="각 변수들의 총 개수가 적을수록&#013;개체 하나하나가 큰 영향력을 발휘하고,&#013;개수가 많을수록 개체의 영향력이 줄어들게 됩니다." /></tooltip></CheckBox>
+                                                                    </VBox>
+                                                                </VBox>
+                                                            </content>
+                                                        </ScrollPane>
+                                                    </content>
+                                                </TitledPane>
+                                                <TitledPane animated="false" text="표시 대상">
+                                                    <content>
+                                                        <ScrollPane>
+                                                            <padding>
+                                                                <Insets left="20"/>
+                                                            </padding>
+                                                            <content>
+                                                                <VBox>
+                                                                    <VBox.margin>
+                                                                        <Insets left="10" top="10" right="10"/>
+                                                                    </VBox.margin>
+                                                                    <HBox>
+                                                                        <Button onAction="#selectAll" text="모두 선택"/>
+                                                                        <Label text="  "/>
+                                                                        <Button onAction="#unselectAll" text="선택 취소"/>
+                                                                    </HBox>
+                                                                    <Label text="시각화 대상"></Label>
+                                                                    <VBox fx:id="visualizationTargetVbox">
+                                                                        <VBox.margin>
+                                                                            <Insets left="10" top="10" right="10"/>
+                                                                        </VBox.margin>
+                                                                    </VBox>
+                                                                    <Label text="환경변수"></Label>
+                                                                    <VBox fx:id="environmentVariableVbox">
+                                                                        <VBox.margin>
+                                                                            <Insets left="10" top="10" right="10"/>
+                                                                        </VBox.margin>
+                                                                    </VBox>
+                                                                </VBox>
+                                                            </content>
+                                                        </ScrollPane>
+                                                    </content>
+                                                </TitledPane>
+                                            </panes>
+                                        </Accordion>
+                                    </children>
+                                </GridPane>
+                                <Button fx:id="calcButton" GridPane.rowIndex="2" text="시각화 진행" onAction="#calculate" maxWidth="Infinity"> </Button>
+                            </children>
+                        </GridPane>
+
+                        <GridPane GridPane.rowIndex="2" GridPane.columnIndex="3">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="100" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints valignment="CENTER" minHeight="10" percentHeight="8" />
+                                <RowConstraints valignment="CENTER" minHeight="10" percentHeight="92" />
+                            </rowConstraints>
+                            <children>
+                                <Label fx:id="mapInfoLabel" GridPane.rowIndex="0" textAlignment="CENTER"></Label>
+                                <Label fx:id="tableInfoLabel" GridPane.rowIndex="0" textAlignment="CENTER" visible="false"></Label>
+                                <Label fx:id="pieInfoLabel" GridPane.rowIndex="0" textAlignment="CENTER" visible="false"></Label>
+                                <Label fx:id="lineInfoLabel" GridPane.rowIndex="0" textAlignment="CENTER" visible="false"></Label>
+                                <WebView fx:id="map" maxWidth="Infinity" maxHeight="Infinity" visible="true" GridPane.rowIndex="1"/>
+
+                                <TableView visible="false" fx:id="table" maxHeight="Infinity" GridPane.rowIndex="1">
+                                    <columns>
+                                    </columns>
+                                    <GridPane.margin>
+                                        <Insets bottom="10" top="10" />
+                                    </GridPane.margin>
+                                </TableView>
+
+
+                                <GridPane GridPane.rowIndex="1" visible="false" fx:id="pieChartGridPane">
+                                    <columnConstraints>
+                                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="100" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="92" />
+                                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="8" />
+                                    </rowConstraints>
+                                    <children>
+                                        <PieChart fx:id="pieChart" GridPane.rowIndex="0"/>
+                                        <Label fx:id="pieChartLabel" textAlignment="CENTER" GridPane.rowIndex="1"/>
+                                    </children>
+                                </GridPane>
+
+                                <GridPane GridPane.rowIndex="1" visible="false" fx:id="lineChartGridPane">
+                                    <columnConstraints>
+                                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="100" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="92" />
+                                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="8" />
+                                    </rowConstraints>
+                                    <children>
+                                        <LineChart fx:id="lineChart" layoutY="-1.0" GridPane.rowIndex="0">
+                                            <xAxis>
+                                                <CategoryAxis side="BOTTOM" />
+                                            </xAxis>
+                                            <yAxis>
+                                                <NumberAxis side="LEFT" />
+                                            </yAxis>
+                                        </LineChart>
+                                        <Label fx:id="lineChartLabel" textAlignment="CENTER" GridPane.rowIndex="1"/>
+                                    </children>
+                                </GridPane>
+
+                                <VBox fx:id="briefingPane" GridPane.rowIndex="1" visible="false">
+                                    <VBox>
+                                        <Label text="기본 정보"/>
+                                        <VBox>
+                                            <VBox.margin>
+                                                <Insets left="20"/>
+                                            </VBox.margin>
+                                            <HBox><Label text="로드 된 데이터 : "/><Label fx:id="loadedDataLabel" text="0"/><Label text="개"/></HBox>
+                                            <HBox><Label text="(환경변수 "/><Label fx:id="loadedEnviromentDataLabel" text="0"/><Label text="종, 시각화 대상 "/><Label fx:id="loadedVisualizationDataLabel" text="0"/><Label text="종)"/></HBox>
+                                            <Label text=" "/>
+                                            <HBox><Label text="격자 분할 : "/><Label fx:id="rowsLabel" text="1"/><Label text="행 "/><Label fx:id="columnsLabel" text="1"/><Label text="열"/></HBox>
+                                            <HBox><Label text="시작 위/경도 : "/><Label fx:id="startLatiLabel" text="0"/><Label text=", "/><Label fx:id="startLongiLabel" text="0"/></HBox>
+                                            <HBox><Label text="종료 위/경도 : "/><Label fx:id="endLatiLabel" text="0"/><Label text=", "/><Label fx:id="endLongiLabel" text="0"/></HBox>
+
+                                        </VBox>
+                                    </VBox>
+                                    <Label text=" "/>
+                                    <VBox>
+                                    <Label text="시각화대상 정보"/>
+                                    <VBox>
+                                        <VBox.margin>
+                                            <Insets left="20"/>
+                                        </VBox.margin>
+                                        <ScrollPane fitToWidth="true">
+                                            <VBox fx:id="briefingVisualizationData">
+                                                <VBox.margin>
+                                                    <Insets top="10" left="20" bottom="10"/>
+                                                </VBox.margin>
+                                            </VBox>
+                                        </ScrollPane>
+                                    </VBox>
+                                    </VBox>
+                                </VBox>
+
+                            </children>
+                        </GridPane>
+
+                    </children>
+                </GridPane>
+            </children>
+        </HBox>
+        <GridPane GridPane.rowIndex="0">
+            <columnConstraints>
+                <ColumnConstraints minWidth="500" percentWidth="50" />
+                <ColumnConstraints minWidth="500" percentWidth="50" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints valignment="CENTER" minHeight="10" prefHeight="100" />
+            </rowConstraints>
+            <children>
+                <HBox alignment="CENTER_LEFT" GridPane.columnIndex="0">
+                    <!--<GridPane.margin>-->
+                        <!--<Insets bottom="5" left="20" right="10" top="5" />-->
+                    <!--</GridPane.margin>-->
+                    <!--<children>-->
+                        <!--<Label text="시각화" />-->
+                    <!--</children>-->
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" GridPane.columnIndex="1" spacing="10">
+                    <children>
+                        <Button id="screenshot" styleClass="topIcon" onAction="#screenshot"><tooltip><Tooltip text="스크린샷" /></tooltip></Button>
+                        <Button fx:id="alwaysTop" styleClass="topIcon" onAction="#alwaysTop"><tooltip><Tooltip text="항상 위" /></tooltip></Button>
+                        <Button id="minimumButton" styleClass="topIcon" onAction="#minimize"><tooltip><Tooltip text="최소화" /></tooltip></Button>
+                        <Button id="closeButton" styleClass="topIcon" onAction="#close"><tooltip><Tooltip text="창 닫기" /></tooltip></Button>
+                    </children>
+                    <GridPane.margin>
+                        <Insets bottom="5" left="10" right="10" top="5"/>
+                    </GridPane.margin>
+                </HBox>
+            </children>
+        </GridPane>
+    </children>
+</GridPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<GridPane fx:id="mainPane" stylesheets="/resources/css/basic.css,/resources/css/alarm/alarm.css" xmlns="http://javafx.com/javafx/8.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goldbigdragon.github.io.function.alarm.controller.AlarmController" onMouseDragged="#mouseDragged" onMousePressed="#mousePressed">
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="100" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="25" minHeight="10" />
+        <RowConstraints percentHeight="75" minHeight="10" valignment="CENTER"/>
+    </rowConstraints>
+    <children>
+        <HBox alignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+            <children>
+                <GridPane minWidth="400" minHeight="200">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="100" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="100" />
+                    </rowConstraints>
+                    <children>
+                        <Label fx:id="title" text="texxxxxxxt" alignment="CENTER"/>
+                    </children>
+                </GridPane>
+            </children>
+        </HBox>
+        <GridPane GridPane.rowIndex="0">
+            <columnConstraints>
+                <ColumnConstraints minWidth="400" percentWidth="100" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints valignment="CENTER" minHeight="10" percentHeight="100" />
+            </rowConstraints>
+            <children>
+                <HBox alignment="CENTER_RIGHT" GridPane.columnIndex="0" spacing="10">
+                    <children>
+                        <Button id="screenshot" styleClass="topIcon" onAction="#screenshot"><tooltip><Tooltip text="스크린샷" /></tooltip></Button>
+                        <Button fx:id="alwaysTop" styleClass="topIcon" onAction="#alwaysTop"><tooltip><Tooltip text="항상 위" /></tooltip></Button>
+                        <Button id="minimumButton" styleClass="topIcon" onAction="#minimize"><tooltip><Tooltip text="최소화" /></tooltip></Button>
+                        <Button id="closeButton" styleClass="topIcon" onAction="#close"><tooltip><Tooltip text="창 닫기" /></tooltip></Button>
+                    </children>
+                    <GridPane.margin>
+                        <Insets bottom="5" left="10" right="10" top="5"/>
+                    </GridPane.margin>
+                </HBox>
+            </children>
+        </GridPane>
+    </children>
+</GridPane>

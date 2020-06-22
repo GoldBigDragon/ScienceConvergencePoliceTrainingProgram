@@ -1,0 +1,16 @@
+#mainPane {
+    -fx-background-image: url("/resources/img/pane/visualizationTargetSelect.png");
+}
+
+#deleteButton {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-max-height: 30px;
+    -fx-max-width: 30px;
+    -fx-background-radius: 3px;
+    -fx-background-size: 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/resources/img/common/delete.png");
+}

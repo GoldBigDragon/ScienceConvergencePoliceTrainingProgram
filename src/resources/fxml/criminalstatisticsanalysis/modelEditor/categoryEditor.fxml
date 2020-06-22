@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<GridPane alignment="CENTER" stylesheets="/resources/css/basic.css,/resources/css/criminalstatisticsanalysis/modelEditor.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goldbigdragon.github.io.function.criminalstatisticsanalysis.editor.model.controller.ModelEditorController" minHeight="700">
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" minWidth="1" percentWidth="70" />
+        <ColumnConstraints halignment="CENTER" minWidth="1" percentWidth="5" />
+        <ColumnConstraints halignment="CENTER" minWidth="1" percentWidth="25" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints valignment="TOP" percentHeight="2" minHeight="10" />
+        <RowConstraints valignment="TOP" percentHeight="2" minHeight="10" />
+        <RowConstraints valignment="TOP" percentHeight="2" minHeight="10" />
+        <RowConstraints valignment="TOP" percentHeight="5" minHeight="10" />
+        <RowConstraints valignment="TOP" percentHeight="2" minHeight="10" />
+        <RowConstraints valignment="TOP" percentHeight="2" minHeight="10" />
+        <RowConstraints valignment="TOP" percentHeight="80" minHeight="10" />
+        <RowConstraints valignment="BOTTOM" percentHeight="5" minHeight="10" />
+    </rowConstraints>
+    <children>
+        <Label text="카테고리 이름 변경" GridPane.halignment="LEFT"/>
+        <TextField GridPane.rowIndex="2" fx:id="editCategoryName" promptText="카테고리 이름" onKeyPressed="#keyPush"/>
+        <Button GridPane.rowIndex="2" GridPane.columnIndex="2" text="변경" maxWidth="Infinity" onAction="#editCategoryName"/>
+
+        <Label GridPane.rowIndex="4" text="엘리먼트 추가" GridPane.halignment="LEFT"/>
+        <TextField GridPane.rowIndex="6" fx:id="newElementName" promptText="엘리먼트 이름" onKeyPressed="#keyPush"/>
+        <Button GridPane.rowIndex="6" GridPane.columnIndex="2" text="추가" maxWidth="Infinity" onAction="#addElement"/>
+
+        <Button GridPane.rowIndex="7" GridPane.columnSpan="3" text="카테고리 제거" maxWidth="Infinity" onAction="#deleteCategory"/>
+    </children>
+</GridPane>

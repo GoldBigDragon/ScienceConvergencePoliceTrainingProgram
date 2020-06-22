@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .area {
+            position: absolute;
+            background: #fff;
+            border: 1px solid #888;
+            border-radius: 3px;
+            font-size: 16px;
+            top: -5px;
+            left: 15px;
+            padding:10px;
+        }
+        .info {
+            font-family :'나눔고딕', 'Malgun Gothic', sans-serif;
+            width: 200px;
+            height: 250px;
+            overflow-x: auto;
+            white-space: nowrap;
+            overflow-y: auto;
+            font-size: 16px;
+            padding: 10px;
+        }
+        .info .title {
+            font-weight: bold;
+        }
+        .info .lore {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body bgcolor="#FCFCFC">
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f4fc9aae6e786d37a7a42359a7fbc0b8"></script>
+<div id="map" style="width:675px;height:550px;"></div>
+
+<script type="text/javascript">
+    var container = document.getElementById('map');
+    var options = {
+        center: new kakao.maps.LatLng(36.62699, 128.01265),
+        level: 13
+    };
+    var map = new kakao.maps.Map(container, options),
+        customOverlay = new kakao.maps.CustomOverlay({}),
+        infowindow = new kakao.maps.InfoWindow({removable: true});
+
+    markers = [];
+
+    function clear() {
+        var count = 0;
+        for (; count < markers.length; count++) {
+            markers[count].setMap(null);
+        }
+        markers = [];
+    }
+
+    function drawPolygon(startLatitude, startLongitude, endLatitude, endLongitude, color, sector, totalAmount, lore) {
+        var polygonPath = [
+            new kakao.maps.LatLng(startLatitude, startLongitude),
+            new kakao.maps.LatLng(endLatitude, startLongitude),
+            new kakao.maps.LatLng(endLatitude, endLongitude),
+            new kakao.maps.LatLng(startLatitude, endLongitude)
+        ];
+        var polygon = new kakao.maps.Polygon({
+            map: map,
+            path:polygonPath,
+            strokeWeight: 1,
+            strokeColor: color,
+            strokeOpacity: 0.5,
+            strokeStyle: 'solid',
+            fillColor: color,
+            fillOpacity: 0.3
+        });
+        kakao.maps.event.addListener(polygon, 'mouseover', function (mouseEvent) {
+            polygon.setOptions({fillOpacity: 0.5});
+            customOverlay.setContent('<div class="area">[Sector : ' + sector + ']  '+totalAmount+'</div>');
+            customOverlay.setPosition(mouseEvent.latLng);
+            customOverlay.setMap(map);
+        });
+        kakao.maps.event.addListener(polygon, 'mousemove', function (mouseEvent) {
+            customOverlay.setPosition(mouseEvent.latLng);
+        });
+        kakao.maps.event.addListener(polygon, 'mouseout', function () {
+            polygon.setOptions({fillOpacity: 0.3});
+            customOverlay.setMap(null);
+        });
+        kakao.maps.event.addListener(polygon, 'click', function (mouseEvent) {
+            var content = '<div class="info">' +
+                '   <div class="title">Sector : ' + sector + '</div>' +
+                '   <div class="lore">' + lore + '</area>' +
+                '</div>';
+
+            infowindow.setContent(content);
+            infowindow.setPosition(mouseEvent.latLng);
+            infowindow.setMap(map);
+        });
+        polygon.setMap(map);
+        markers.push(polygon);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<GridPane alignment="CENTER" stylesheets="/resources/css/basic.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goldbigdragon.github.io.function.criminalstatisticsanalysis.editor.data.controller.DataCreatorController" minHeight="700">
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" minWidth="1" percentWidth="70" />
+        <ColumnConstraints halignment="CENTER" minWidth="1" percentWidth="5" />
+        <ColumnConstraints halignment="CENTER" minWidth="1" percentWidth="25" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints valignment="TOP" percentHeight="2" minHeight="10" />
+        <RowConstraints valignment="TOP" percentHeight="2" minHeight="10" />
+        <RowConstraints valignment="TOP" percentHeight="30" minHeight="10" />
+        <RowConstraints valignment="BOTTOM" percentHeight="66" minHeight="10" />
+    </rowConstraints>
+    <children>
+        <Label text="패턴 추가" GridPane.halignment="LEFT"/>
+        <MenuButton GridPane.rowIndex="2" fx:id="elementSelectMenuButton" text="등록된 엘리먼트가 없습니다!"></MenuButton>
+        <Button fx:id="addButton" GridPane.rowIndex="2" GridPane.columnIndex="2" text="추가" maxWidth="Infinity" onAction="#addPattern" disable="true"/>
+    </children>
+</GridPane>

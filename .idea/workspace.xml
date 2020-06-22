@@ -1,0 +1,1219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <ignored path="JavaFxApplication.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ScienceConvergencePoliceTrainingProgram$Main.ic" NAME="Main Coverage Results" MODIFIED="1589721984859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>sample.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="209" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="JavaFxApplication" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>VAC</find>
+      <find>OPEN_CRIMINALSTATISTICSANALYSIS_DATA_EDITOR</find>
+      <find>CREATE_FLUCTUATED_DATA</find>
+      <find>minStartTime</find>
+      <find>DataFluctuationObject</find>
+      <find>createAreaData</find>
+      <find>distance</find>
+      <find>geoDistanceMap</find>
+      <find>getGeoDistance</find>
+      <find>getTotalOccurrenceBonus</find>
+      <find>mapOccurrenceCalculate</find>
+      <find>distanceBonus</find>
+      <find>getAverageLoc</find>
+      <find>getSectorStartEnd</find>
+      <find>getSector(</find>
+      <find>.YEAR,</find>
+      <find>yearList</find>
+      <find>-1</find>
+      <find>== -1</find>
+      <find>toString</find>
+      <find>load</find>
+      <find>dfoList</find>
+      <find>minAddEventRange</find>
+      <find>additionalDataBox</find>
+      <find>System.</find>
+      <find>AbsoluteCountDifferenceCalculateThread</find>
+      <find>ateThread 에러!</find>
+      <find>NULL</find>
+      <find>geoDataDifferenceMap</find>
+      <find>mapOcc</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/object/BatchObject.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/util/DateUtil.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/calculator/threads/AbsoluteTargetDataCalculateThread.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/enums/TimeEnum.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/calculator/threads/AbsoluteDataCountCalculateThread.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/calculator/object/TargetDifferenceObject.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/calculator/threads/AbsoluteDifferenceCalculateThread.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/calculator/threads/AbsoluteTargetTimeMapCalculateThread.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/calculator/threads/AbsoluteCountDifferenceCalculateThread.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/calculator/threads/TimeEdgeQueryAddThread.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/alarm/controller/AlarmController.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/visualization/view/VisualizationMainView.java" />
+        <option value="$PROJECT_DIR$/src/resources/css/criminalstatisticsanalysis/main.css" />
+        <option value="$PROJECT_DIR$/src/resources/fxml/criminalstatisticsanalysis/main.fxml" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/kakaomap/web/KakaoMapServer.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/kakaomap/web/handler/VisualizationMap.java" />
+        <option value="$PROJECT_DIR$/src/resources/web/criminalstatisticsanalysis/view/map.html" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/calculator/enums/VisualizationType.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/calculator/object/VisualizationObject.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/alarm/enums/BeforeWorkType.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/alarm/enums/AfterWorkType.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/alarm/controller/ProgressController.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/main/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/node/NumberField.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/object/SubQueryObject.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/visualization/controller/VisualizationTargetController.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/node/PieChartNode.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/visualization/object/VisualizationTableObject.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/alarm/AlarmAPI.java" />
+        <option value="$PROJECT_DIR$/src/resources/css/criminalstatisticsanalysis/visualizationMain.css" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/editor/data/enums/AddEventType.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/editor/data/object/DataObject.java" />
+        <option value="$PROJECT_DIR$/src/resources/fxml/criminalstatisticsanalysis/dataEditor/editPattern.fxml" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/editor/data/DataAPI.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/editor/data/DataFluctuationCreate.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/editor/data/object/DataFluctuationObject.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/editor/data/controller/DataCreatorController.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/editor/data/DataDBQuery.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/calculator/AbsoluteDataDBQuery.java" />
+        <option value="$PROJECT_DIR$/src/resources/fxml/criminalstatisticsanalysis/visualization/visualizationMain.fxml" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/calculator/AbsoluteDataAPI.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/Main.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/visualization/controller/VisualizationMainController.java" />
+        <option value="$PROJECT_DIR$/src/resources/web/criminalstatisticsanalysis/view/visualizationMap.html" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/calculator/threads/DistanceCalculateThread.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/calculator/Absolute.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/alarm/controller/CriminalStatisticsAnalysisProgress.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/editor/data/object/AdditionalDataTableObject.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/editor/model/object/ModelObject.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/main/threads/ModelCreateThread.java" />
+        <option value="$PROJECT_DIR$/src/goldbigdragon/github/io/util/GuestRead.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="602" />
+    <option name="y" value="121" />
+    <option name="width" value="1190" />
+    <option name="height" value="725" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ScienceConvergencePoliceTrainingProgram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScienceConvergencePoliceTrainingProgram" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScienceConvergencePoliceTrainingProgram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScienceConvergencePoliceTrainingProgram" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScienceConvergencePoliceTrainingProgram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScienceConvergencePoliceTrainingProgram" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScienceConvergencePoliceTrainingProgram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScienceConvergencePoliceTrainingProgram" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../QBR" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.20833333" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\GoldBigDragon\Downloads\YSU\ScienceConvergencePoliceTrainingProgram\src\resources\web\criminalstatisticsanalysis\view" />
+      <recent name="C:\Users\GoldBigDragon\Downloads\YSU\ScienceConvergencePoliceTrainingProgram\src\resources\fxml\criminalstatisticsanalysis\visualization" />
+      <recent name="C:\Users\GoldBigDragon\Downloads\YSU\ScienceConvergencePoliceTrainingProgram\src\resources\css\criminalstatisticsanalysis" />
+      <recent name="C:\Users\GoldBigDragon\Downloads\YSU\ScienceConvergencePoliceTrainingProgram\src\goldbigdragon\github\io\function\criminalstatisticsanalysis\visualization" />
+      <recent name="C:\Users\GoldBigDragon\Downloads\YSU\ScienceConvergencePoliceTrainingProgram\src\resources\fxml\criminalstatisticsanalysis\dataEditor" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="goldbigdragon.github.io.function.criminalstatisticsanalysis.editor.data.enums" />
+      <recent name="goldbigdragon.github.io.function.criminalstatisticsanalysis.visualization.object" />
+      <recent name="goldbigdragon.github.io.function.criminalstatisticsanalysis.calculator.enums" />
+      <recent name="goldbigdragon.github.io.function.criminalstatisticsanalysis.visualization.view" />
+      <recent name="goldbigdragon.github.io.function.criminalstatisticsanalysis.visualization.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\GoldBigDragon\Downloads\YSU\ScienceConvergencePoliceTrainingProgram\src\resources\web\criminalstatisticsanalysis\view" />
+      <recent name="C:\Users\GoldBigDragon\Downloads\YSU\ScienceConvergencePoliceTrainingProgram\src\resources\fxml\criminalstatisticsanalysis\dataEditor" />
+      <recent name="C:\Users\GoldBigDragon\Downloads\YSU\ScienceConvergencePoliceTrainingProgram\src\resources\fxml\criminalstatisticsanalysis\modelEditor" />
+      <recent name="C:\Users\GoldBigDragon\Downloads\YSU\ScienceConvergencePoliceTrainingProgram\src\resources\css\alarm" />
+      <recent name="C:\Users\GoldBigDragon\Downloads\YSU\ScienceConvergencePoliceTrainingProgram\src\resources\fxml\alarm" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="goldbigdragon.github.io.Main" />
+      <module name="ScienceConvergencePoliceTrainingProgram" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+      <created>1359379246138</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1359379246138</updated>
+      <workItem from="1359379250712" duration="1302000" />
+      <workItem from="1579502501243" duration="20810000" />
+      <workItem from="1579566378864" duration="10535000" />
+      <workItem from="1579659107939" duration="6922000" />
+      <workItem from="1579692485886" duration="4555000" />
+      <workItem from="1579755894349" duration="6940000" />
+      <workItem from="1579846174638" duration="7893000" />
+      <workItem from="1579926709805" duration="1268000" />
+      <workItem from="1580043183686" duration="1522000" />
+      <workItem from="1580107380169" duration="13537000" />
+      <workItem from="1580174662663" duration="29429000" />
+      <workItem from="1580264397009" duration="10750000" />
+      <workItem from="1580315313447" duration="1914000" />
+      <workItem from="1580357685979" duration="10473000" />
+      <workItem from="1580437193888" duration="7063000" />
+      <workItem from="1580562321581" duration="7029000" />
+      <workItem from="1580612753236" duration="3833000" />
+      <workItem from="1580688284700" duration="8849000" />
+      <workItem from="1580776725623" duration="11501000" />
+      <workItem from="1580865035477" duration="12244000" />
+      <workItem from="1581076493011" duration="1425000" />
+      <workItem from="1581143930802" duration="599000" />
+      <workItem from="1581231058485" duration="1263000" />
+      <workItem from="1581300631726" duration="3661000" />
+      <workItem from="1581431329300" duration="629000" />
+      <workItem from="1581686093849" duration="725000" />
+      <workItem from="1581728726329" duration="3548000" />
+      <workItem from="1581765349820" duration="599000" />
+      <workItem from="1581835502807" duration="9648000" />
+      <workItem from="1582000969024" duration="10618000" />
+      <workItem from="1582018566676" duration="2913000" />
+      <workItem from="1582073296951" duration="3430000" />
+      <workItem from="1582083811734" duration="3156000" />
+      <workItem from="1582165442249" duration="19306000" />
+      <workItem from="1582280337311" duration="597000" />
+      <workItem from="1582332691440" duration="7753000" />
+      <workItem from="1582422402380" duration="3138000" />
+      <workItem from="1582693998564" duration="5625000" />
+      <workItem from="1582762152507" duration="2561000" />
+      <workItem from="1582800736324" duration="7165000" />
+      <workItem from="1582842608083" duration="26026000" />
+      <workItem from="1582940303541" duration="4521000" />
+      <workItem from="1582965645914" duration="4029000" />
+      <workItem from="1583024914425" duration="6614000" />
+      <workItem from="1583113601013" duration="6969000" />
+      <workItem from="1583322986206" duration="2590000" />
+      <workItem from="1583386367829" duration="2146000" />
+      <workItem from="1583469704986" duration="11002000" />
+      <workItem from="1583541058553" duration="15685000" />
+      <workItem from="1583593409748" duration="234000" />
+      <workItem from="1583673739719" duration="599000" />
+      <workItem from="1583799172844" duration="18418000" />
+      <workItem from="1583889556042" duration="5710000" />
+      <workItem from="1583977681453" duration="2445000" />
+      <workItem from="1584065664268" duration="15866000" />
+      <workItem from="1584158661547" duration="7858000" />
+      <workItem from="1584234835121" duration="1896000" />
+      <workItem from="1584260496363" duration="8522000" />
+      <workItem from="1584327553817" duration="5567000" />
+      <workItem from="1584407198265" duration="14471000" />
+      <workItem from="1584500571666" duration="1148000" />
+      <workItem from="1584505393359" duration="2433000" />
+      <workItem from="1584528547554" duration="7275000" />
+      <workItem from="1584579994567" duration="2562000" />
+      <workItem from="1584672627174" duration="1198000" />
+      <workItem from="1584849181729" duration="2017000" />
+      <workItem from="1584918219508" duration="5468000" />
+      <workItem from="1585001507549" duration="7130000" />
+      <workItem from="1585092993305" duration="2933000" />
+      <workItem from="1585120514746" duration="389000" />
+      <workItem from="1585217615916" duration="12453000" />
+      <workItem from="1585266603637" duration="8551000" />
+      <workItem from="1585370452204" duration="1840000" />
+      <workItem from="1585462765865" duration="6025000" />
+      <workItem from="1585520269747" duration="2802000" />
+      <workItem from="1585705579662" duration="1086000" />
+      <workItem from="1585742023693" duration="3294000" />
+      <workItem from="1585789611446" duration="11757000" />
+      <workItem from="1585888406712" duration="1705000" />
+      <workItem from="1585960567826" duration="11675000" />
+      <workItem from="1586050601491" duration="597000" />
+      <workItem from="1586052936855" duration="14640000" />
+      <workItem from="1586136701322" duration="7472000" />
+      <workItem from="1586222894050" duration="3517000" />
+      <workItem from="1586275338043" duration="218000" />
+      <workItem from="1586317112962" duration="13740000" />
+      <workItem from="1586385712836" duration="5573000" />
+      <workItem from="1586453021302" duration="33000" />
+      <workItem from="1586484706630" duration="4516000" />
+      <workItem from="1586567541586" duration="7292000" />
+      <workItem from="1586653393061" duration="1904000" />
+      <workItem from="1586673462247" duration="3915000" />
+      <workItem from="1586741679016" duration="9414000" />
+      <workItem from="1586827511020" duration="9008000" />
+      <workItem from="1586938118270" duration="609000" />
+      <workItem from="1587088530679" duration="625000" />
+      <workItem from="1587267635143" duration="1218000" />
+      <workItem from="1587433377723" duration="14004000" />
+      <workItem from="1587526955008" duration="17702000" />
+      <workItem from="1587606220652" duration="1717000" />
+      <workItem from="1587694538307" duration="14273000" />
+      <workItem from="1587799266430" duration="9688000" />
+      <workItem from="1587867562161" duration="10028000" />
+      <workItem from="1587955863197" duration="4234000" />
+      <workItem from="1588039998021" duration="13957000" />
+      <workItem from="1588075553563" duration="792000" />
+      <workItem from="1588132668848" duration="29969000" />
+      <workItem from="1588206982497" duration="10377000" />
+      <workItem from="1588293801523" duration="10000" />
+      <workItem from="1588294965870" duration="599000" />
+      <workItem from="1588323633344" duration="4161000" />
+      <workItem from="1588386367389" duration="9502000" />
+      <workItem from="1588435000286" duration="7039000" />
+      <workItem from="1588466363845" duration="14102000" />
+      <workItem from="1588644883245" duration="21291000" />
+      <workItem from="1588727510395" duration="18435000" />
+      <workItem from="1588817103108" duration="20662000" />
+      <workItem from="1588912286952" duration="18488000" />
+      <workItem from="1588994706054" duration="28862000" />
+      <workItem from="1589104069006" duration="14109000" />
+      <workItem from="1589170729250" duration="1873000" />
+      <workItem from="1589270532258" duration="597000" />
+      <workItem from="1589423376748" duration="1200000" />
+      <workItem from="1589433402290" duration="597000" />
+      <workItem from="1589516036633" duration="17261000" />
+      <workItem from="1589594416221" duration="10195000" />
+      <workItem from="1589640820032" duration="1279000" />
+      <workItem from="1589679086434" duration="10797000" />
+      <workItem from="1589698409157" duration="10727000" />
+      <workItem from="1589720442533" duration="632000" />
+      <workItem from="1589727844640" duration="2748000" />
+      <workItem from="1589765210933" duration="25407000" />
+      <workItem from="1589858711303" duration="17603000" />
+      <workItem from="1589958827996" duration="2456000" />
+      <workItem from="1590028582371" duration="25287000" />
+      <workItem from="1590156594933" duration="2401000" />
+      <workItem from="1590193740119" duration="3248000" />
+      <workItem from="1590217316769" duration="14519000" />
+      <workItem from="1590245109294" duration="4389000" />
+      <workItem from="1590291060040" duration="9634000" />
+      <workItem from="1590308583843" duration="2740000" />
+      <workItem from="1590362079880" duration="19188000" />
+      <workItem from="1590658252497" duration="3926000" />
+      <workItem from="1590674204128" duration="2001000" />
+      <workItem from="1590707647255" duration="4511000" />
+      <workItem from="1590774449339" duration="4286000" />
+      <workItem from="1590806040744" duration="37200000" />
+      <workItem from="1590915203272" duration="8904000" />
+      <workItem from="1590937643236" duration="5642000" />
+      <workItem from="1590973819828" duration="32846000" />
+      <workItem from="1591062933570" duration="4901000" />
+      <workItem from="1591086563905" duration="5515000" />
+      <workItem from="1591148877356" duration="3489000" />
+      <workItem from="1591328079003" duration="18889000" />
+      <workItem from="1591409676705" duration="19907000" />
+      <workItem from="1591488542058" duration="17802000" />
+      <workItem from="1591519646635" duration="2637000" />
+      <workItem from="1591540963845" duration="11187000" />
+      <workItem from="1591584352420" duration="12738000" />
+      <workItem from="1591658384235" duration="5524000" />
+      <workItem from="1591694265671" duration="9071000" />
+      <workItem from="1591756518894" duration="15380000" />
+      <workItem from="1591823612635" duration="29209000" />
+      <workItem from="1591888063537" duration="6806000" />
+      <workItem from="1591919286154" duration="21877000" />
+      <workItem from="1591963399396" duration="48000" />
+      <workItem from="1592013874801" duration="5383000" />
+      <workItem from="1592056604917" duration="1564000" />
+      <workItem from="1592095812401" duration="9560000" />
+      <workItem from="1592123338420" duration="1132000" />
+      <workItem from="1592134625039" duration="11161000" />
+      <workItem from="1592186162042" duration="32732000" />
+      <workItem from="1592270987633" duration="1929000" />
+      <workItem from="1592276333509" duration="23000" />
+      <workItem from="1592352334559" duration="4626000" />
+      <workItem from="1592377353078" duration="13295000" />
+      <workItem from="1592433707205" duration="6014000" />
+      <workItem from="1592458674850" duration="615000" />
+      <workItem from="1592496037839" duration="11866000" />
+      <workItem from="1592586505336" duration="2120000" />
+      <workItem from="1592625840328" duration="7186000" />
+      <workItem from="1592658580497" duration="649000" />
+      <workItem from="1592830355741" duration="1015000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1469873000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2261745" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" weight="0.3295302" />
+      <window_info id="Learn" order="4" weight="0.3295302" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24787535" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33994335" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Problems" order="9" />
+      <window_info anchor="bottom" id="Changes" order="10" />
+      <window_info anchor="bottom" id="Profiler" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.26628897" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="15" />
+      <window_info anchor="bottom" id="Terminal" order="16" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Database" order="1" sideWeight="0.49284253" weight="0.3295302" />
+      <window_info anchor="right" id="Maven" order="2" weight="0.3295302" />
+      <window_info anchor="right" id="Ant Build" order="3" sideWeight="0.49541286" weight="0.24966443" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.24966443" />
+      <window_info anchor="right" id="JetGradle" order="5" />
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.50715744" side_tool="true" weight="0.3295302" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.20604026" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" weight="0.3295302" />
+      <window_info id="Learn" order="4" weight="0.3295302" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39235127" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33994335" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Problems" order="9" />
+      <window_info anchor="bottom" id="Changes" order="10" />
+      <window_info anchor="bottom" id="Profiler" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.1756374" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="15" />
+      <window_info anchor="bottom" id="Terminal" order="16" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Database" order="1" sideWeight="0.49284253" weight="0.3295302" />
+      <window_info anchor="right" id="Maven" order="2" weight="0.3295302" />
+      <window_info anchor="right" id="Ant Build" order="3" sideWeight="0.49541286" weight="0.24966443" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.24966443" />
+      <window_info anchor="right" id="JetGradle" order="5" />
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.50715744" side_tool="true" weight="0.3295302" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/editor/data/DataFluctuationCreate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/editor/model/object/PointTableObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/editor/model/object/ModelObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/editor/model/view/ModelEditorView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/editor/model/ModelAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/editor/model/ModelCreate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/editor/model/ModelDBQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/kakaomap/web/handler/JsHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/kakaomap/web/handler/MapHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/kakaomap/web/handler/VisualizationMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/kakaomap/web/KakaoMapServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/main/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/main/threads/ModelCreateThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/main/threads/DataRangeCalculateThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/main/MainAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/main/view/MainView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/query/CsvCheckAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/query/DefaultCreate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/visualization/controller/VisualizationMainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/visualization/controller/VisualizationTargetController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/visualization/object/VisualizationObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/visualization/object/VisualizationTableObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/visualization/view/VisualizationMainView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/criminalstatisticsanalysis/visualization/view/VisualizationTargetView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/menu/information/InformationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/menu/information/InformationView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/menu/main/threads/TimerThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/menu/main/MainAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/menu/main/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/menu/main/MainView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/menu/option/OptionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/menu/option/OptionView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/web/handlers/RequestHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/web/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/BaseThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/function/BaseView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/node/NumberField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/node/DateTimePicker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/node/RealField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/util/ConfigUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/util/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/util/DbHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/util/RandomUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/util/SoundObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/util/SoundUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/util/WebUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/MainVariables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/util/GuestRead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="88" column="9" lean-forward="true" selection-start-line="77" selection-start-column="53" selection-end-line="88" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goldbigdragon/github/io/util/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>JavaFXApp</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20833333" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20833333" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20833333" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20833333" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ScienceConvergencePoliceTrainingProgram</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20833333" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>libraries</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20833333" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,92 @@
+#mainPane {
+    -fx-background-image: url("/resources/img/pane/dataEdit.png");
+}
+
+.optionButton {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-max-height: 50px;
+    -fx-max-width: 50px;
+    -fx-background-radius: 5px;
+    -fx-background-size: 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-pref-height: infinity;
+    -fx-pref-width: infinity;
+}
+
+.optionButton:hover {
+    -fx-scale-x: 120%;
+    -fx-scale-y: 120%;
+    -fx-scale-z: 120%;
+}
+
+#createRandomDataButton {
+    -fx-background-image: url("/resources/img/common/random_data.png");
+}
+#createRandomDataButton:hover{
+    -fx-background-image: url("/resources/img/common/random_data_hover.png");
+}
+
+#progress {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-max-height: 300px;
+    -fx-max-width: 300px;
+    -fx-background-radius: 3px;
+    -fx-background-size: 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/resources/img/common/progressing.gif");
+}
+
+#deleteButton {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-max-height: 30px;
+    -fx-max-width: 30px;
+    -fx-background-radius: 3px;
+    -fx-background-size: 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/resources/img/common/delete.png");
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane {
+    -fx-tab-min-width:40px;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+}
+
+.tab-pane .tab {
+    -fx-background-color: rgba(255, 114, 63, 0.4);
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: rgba(255, 114, 63, 0.8);
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.orangeBackground {
+    -fx-background-color: rgba(255, 114, 63, 0.1);
+    -fx-background-radius: 5px;
+}
+
+.date-picker-popup .button {
+    -fx-background-color: transparent;
+}

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<GridPane fx:id="mainPane" stylesheets="/resources/css/basic.css,/resources/css/menu/information.css" xmlns="http://javafx.com/javafx/8.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goldbigdragon.github.io.function.menu.information.InformationController" onMouseDragged="#mouseDragged" onMousePressed="#mousePressed">
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="100" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="9" minHeight="10" />
+        <RowConstraints percentHeight="91" minHeight="10" valignment="CENTER"/>
+    </rowConstraints>
+    <children>
+        <HBox alignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+            <children>
+                <GridPane minWidth="400" minHeight="500">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="100" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints valignment="CENTER" minHeight="10" percentHeight="100" />
+                    </rowConstraints>
+                    <children>
+                        <GridPane GridPane.columnIndex="0">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="100" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10" percentHeight="50" valignment="CENTER" />
+                                <RowConstraints minHeight="10" percentHeight="50" valignment="CENTER" />
+                            </rowConstraints>
+                            <padding>
+                                <Insets bottom="20" left="20" right="20" top="20" />
+                            </padding>
+                            <children>
+                                <VBox GridPane.columnIndex="0" spacing="10" alignment="CENTER">
+                                    <children>
+                                        <Label id="ysuLogo" onMouseClicked="#openYsu"/>
+                                        <Label id="title" text="SCPTP">
+                                            <VBox.margin>
+                                                <Insets bottom="0" top="-40" />
+                                            </VBox.margin>
+                                        </Label>
+                                        <Label text="Science Convergence Police Training Program"/>
+                                        <Label id="description" text="범죄정보 과학융합 훈련을 돕기 위해&#013;
+Ys'U 대학에서 개발된 프로그램입니다.&#013;
+"/>
+                                    </children>
+                                </VBox>
+
+                                <GridPane GridPane.columnIndex="0" GridPane.rowIndex="1">
+                                    <columnConstraints>
+                                        <ColumnConstraints halignment="CENTER" minWidth="10" percentWidth="35" />
+                                        <ColumnConstraints halignment="LEFT" minWidth="10" percentWidth="65" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10" percentHeight="100" valignment="BOTTOM" />
+                                    </rowConstraints>
+                                    <children>
+                                        <VBox GridPane.columnIndex="0" GridPane.rowIndex="0" spacing="10" alignment="BOTTOM_CENTER">
+                                            <children>
+                                                <Label text="버전 :" />
+                                                <Label text="업데이트 날짜 :" GridPane.rowIndex="1" />
+                                                <Label text="개발자 연락처 :" GridPane.rowIndex="2" />
+                                            </children>
+                                        </VBox>
+                                        <VBox GridPane.columnIndex="1" GridPane.rowIndex="0" spacing="10" alignment="BOTTOM_CENTER">
+                                            <children>
+                                                <Label fx:id="version" text="정보 로드중..." GridPane.columnIndex="1" />
+                                                <Label fx:id="updateDate" text="정보 로드중..." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <Label id="devEmail" text="dnwndugod642@naver.com" GridPane.columnIndex="1" GridPane.rowIndex="2" onMouseClicked="#openCafe" />
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </GridPane>
+                            </children>
+                        </GridPane>
+                    </children>
+                </GridPane>
+            </children>
+        </HBox>
+        <GridPane GridPane.rowIndex="0">
+            <columnConstraints>
+                <ColumnConstraints minWidth="400" percentWidth="100" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints valignment="CENTER" minHeight="10" percentHeight="100" />
+            </rowConstraints>
+            <children>
+                <HBox alignment="CENTER_RIGHT" GridPane.columnIndex="0" spacing="10">
+                    <children>
+                        <Button id="screenshot" styleClass="topIcon" onAction="#screenshot"><tooltip><Tooltip text="스크린샷" /></tooltip></Button>
+                        <Button fx:id="alwaysTop" styleClass="topIcon" onAction="#alwaysTop"><tooltip><Tooltip text="항상 위" /></tooltip></Button>
+                        <Button id="minimumButton" styleClass="topIcon" onAction="#minimize"><tooltip><Tooltip text="최소화" /></tooltip></Button>
+                        <Button id="closeButton" styleClass="topIcon" onAction="#close"><tooltip><Tooltip text="창 닫기" /></tooltip></Button>
+                    </children>
+                    <GridPane.margin>
+                        <Insets bottom="5" left="10" right="10" top="5"/>
+                    </GridPane.margin>
+                </HBox>
+            </children>
+        </GridPane>
+    </children>
+</GridPane>

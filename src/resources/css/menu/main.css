@@ -1,0 +1,73 @@
+#mainPane {
+    -fx-background-image: url("/resources/img/pane/main.png");
+}
+.menubutton {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-max-height: 100px;
+    -fx-max-width: 100px;
+    -fx-background-radius: 10px;
+    -fx-background-size: 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-pref-height: infinity;
+    -fx-pref-width: infinity;
+}
+.menubutton:hover {
+    -fx-scale-x: 110%;
+    -fx-scale-y: 110%;
+    -fx-scale-z: 110%;
+    -fx-background-color: rgba(255, 101, 50, 0.3);
+}
+#criminalStatisticsAnalysis {
+    -fx-background-image: url("/resources/img/main/criminalStatisticsAnalysis.png");
+}
+#routeExpecting {
+    -fx-background-image: url("/resources/img/main/routeExpecting.png");
+}
+#blockEscapeRoute {
+    -fx-background-image: url("/resources/img/main/blockEscapeRoute.png");
+}
+#illegalJudgmentQuiz {
+    -fx-background-image: url("/resources/img/main/illegalJudgmentQuiz.png");
+}
+
+.sideButton {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-max-height: 50px;
+    -fx-max-width: 50px;
+    -fx-background-radius: 10px;
+    -fx-background-size: 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-pref-height: infinity;
+    -fx-pref-width: infinity;
+}
+.sideButton:hover {
+    -fx-scale-x: 110%;
+    -fx-scale-y: 110%;
+    -fx-scale-z: 110%;
+}
+#github {
+    -fx-background-image: url("/resources/img/main/github.png");
+}
+#options {
+    -fx-background-image: url("/resources/img/main/option.png");
+}
+#information {
+    -fx-background-image: url("/resources/img/main/information.png");
+}
+#title {
+    -fx-text-fill: white;
+    -fx-font-size: 16pt;
+    -fx-font-weight: bold;
+    -fx-min-width: 750px;
+}
+#description {
+    -fx-text-fill: rgb(240, 240, 240);
+    -fx-font-size: 10pt;
+    -fx-min-width: 750px;
+}

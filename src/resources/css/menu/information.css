@@ -1,0 +1,44 @@
+#mainPane {
+    -fx-background-image: url("/resources/img/pane/information.png");
+}
+
+Label{
+    -fx-text-alignment: CENTER;
+    -fx-alignment: CENTER;
+}
+
+#ysuLogo{
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-max-height: 150px;
+    -fx-max-width: 150px;
+    -fx-background-radius: 10px;
+    -fx-background-image: url("/resources/img/ysu.png");
+    -fx-background-size: 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-pref-height: infinity;
+    -fx-pref-width: infinity;
+}
+#ysuLogo:hover{
+    -fx-scale-x: 115%;
+    -fx-scale-y: 115%;
+    -fx-scale-z: 115%;
+}
+#title {
+    -fx-text-fill: rgb(255, 101, 50);
+    -fx-font-size: 22pt;
+    -fx-font-weight: bold;
+}
+
+#version, #updateDate, #devEmail{
+    -fx-text-fill: rgb(255, 101, 50);
+    -fx-font-weight: bold;
+}
+
+#devEmail:hover{
+    -fx-scale-x: 115%;
+    -fx-scale-y: 115%;
+    -fx-scale-z: 115%;
+}

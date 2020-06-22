@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import goldbigdragon.github.io.node.DateTimePicker?>
+<?import goldbigdragon.github.io.node.NumberField?>
+<?import goldbigdragon.github.io.node.RealField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.RadioButton?>
+<GridPane alignment="CENTER" stylesheets="/resources/css/basic.css,/resources/css/criminalstatisticsanalysis/modelEditor.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goldbigdragon.github.io.function.criminalstatisticsanalysis.editor.data.controller.DataCreatorController" minHeight="700">
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" minWidth="1" percentWidth="70" />
+        <ColumnConstraints halignment="RIGHT" minWidth="1" percentWidth="30" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints valignment="TOP" minHeight="10" percentHeight="4"/>
+        <RowConstraints valignment="TOP" minHeight="10" percentHeight="4"/>
+        <RowConstraints valignment="TOP" minHeight="10" percentHeight="4"/>
+        <RowConstraints valignment="TOP" minHeight="10" percentHeight="2"/>
+        <RowConstraints valignment="TOP" minHeight="10" percentHeight="4"/>
+        <RowConstraints valignment="TOP" minHeight="10" percentHeight="12"/>
+        <RowConstraints valignment="TOP" minHeight="10" percentHeight="2"/>
+        <RowConstraints valignment="TOP" minHeight="10" percentHeight="4"/>
+        <RowConstraints valignment="TOP" minHeight="10" percentHeight="4"/>
+        <RowConstraints valignment="TOP" minHeight="10" percentHeight="4"/>
+        <RowConstraints valignment="TOP" minHeight="10" percentHeight="2"/>
+        <RowConstraints valignment="TOP" minHeight="10" percentHeight="4"/>
+        <RowConstraints valignment="TOP" minHeight="10" percentHeight="12"/>
+        <RowConstraints valignment="TOP" minHeight="10" percentHeight="2"/>
+        <RowConstraints valignment="TOP" minHeight="10" percentHeight="4"/>
+        <RowConstraints valignment="TOP" minHeight="10" percentHeight="26"/>
+        <RowConstraints valignment="TOP" minHeight="10" percentHeight="2"/>
+        <RowConstraints valignment="TOP" minHeight="10" percentHeight="4"/>
+    </rowConstraints>
+    <children>
+        <Label GridPane.rowIndex="0" text="사건 발생 횟수 설정" GridPane.halignment="LEFT"/>
+        <HBox GridPane.rowIndex="1" prefWidth="Infinity" GridPane.columnSpan="2"><Label text="최소 : "/><NumberField fx:id="minEventAmount"/></HBox>
+        <HBox GridPane.rowIndex="2" prefWidth="Infinity" GridPane.columnSpan="2"><Label text="최대 : "/><NumberField fx:id="maxEventAmount"/></HBox>
+
+        <HBox GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.columnSpan="2" alignment="CENTER_LEFT"><Label text="발생 시각 설정    " /> <CheckBox fx:id="shortTime" text="짧은 기간"><tooltip><Tooltip text="1시간 이내의 짧은 시간을 가지도록 합니다." /></tooltip></CheckBox></HBox>
+
+        <ScrollPane fitToWidth="true" prefWidth="Infinity" GridPane.rowIndex="5" GridPane.columnSpan="2">
+            <VBox>
+                <Label text=" [시작 시각]" GridPane.halignment="LEFT"/>
+                <HBox prefWidth="Infinity"><Label text="   최소 : "/><DateTimePicker fx:id="minStartTime"/></HBox>
+                <HBox prefWidth="Infinity"><Label text="   최대 : "/><DateTimePicker fx:id="maxStartTime"/></HBox>
+                <Label text=" "></Label>
+                <Label text=" [종료 시각]" GridPane.halignment="LEFT"/>
+                <HBox prefWidth="Infinity"><Label text="   최소 : "/><DateTimePicker fx:id="minEndTime"/></HBox>
+                <HBox prefWidth="Infinity"><Label text="   최대 : "/><DateTimePicker fx:id="maxEndTime"/></HBox>
+            </VBox>
+        </ScrollPane>
+
+        <Label text="개수 설정" GridPane.halignment="LEFT" GridPane.rowIndex="7" GridPane.columnSpan="2"/>
+        <HBox GridPane.rowIndex="8" prefWidth="Infinity" GridPane.columnSpan="2"><Label text="최소 : "/><NumberField fx:id="minAmount"/></HBox>
+        <HBox GridPane.rowIndex="9" prefWidth="Infinity" GridPane.columnSpan="2"><Label text="최대 : "/><NumberField fx:id="maxAmount"/></HBox>
+
+        <fx:define>
+            <ToggleGroup fx:id="eventType"/>
+        </fx:define>
+
+        <HBox GridPane.halignment="LEFT" GridPane.rowIndex="11" GridPane.columnSpan="2">
+            <RadioButton fx:id="areaRadio" toggleGroup="$eventType" text="발생 지역 " selected="true" onAction="#showAreaEvent"><tooltip><Tooltip text="사건을 위/경도 기준으로 발생시킵니다." /></tooltip></RadioButton>
+            <RadioButton fx:id="enviroAddRadio" toggleGroup="$eventType" text="발생 환경변수 " onAction="#showEnviromentAdd"><tooltip><Tooltip text="사건을 특정 환경변수 기준으로 발생시킵니다." /></tooltip></RadioButton>
+            <RadioButton fx:id="enviroRemoveRadio" toggleGroup="$eventType" text="억제 환경변수 " onAction="#showEnviromentRemove"><tooltip><Tooltip text="등록된 사건을 특정 환경변수 기준으로 제거합니다." /></tooltip></RadioButton>
+        </HBox>
+        <VBox fx:id="eventAreaPanel" GridPane.rowIndex="12" GridPane.columnSpan="2">
+            <ScrollPane fitToWidth="true" prefWidth="Infinity">
+                <VBox>
+                    <Label text=" [시작 지점]" GridPane.halignment="LEFT"/>
+                    <HBox prefWidth="Infinity"><Label text="   최소 위도 : "/><RealField fx:id="minStartLatitude"/></HBox>
+                    <HBox prefWidth="Infinity"><Label text="   최소 경도 : "/><RealField fx:id="minStartLongitude"/></HBox>
+                    <HBox prefWidth="Infinity"><Label text="   최대 위도 : "/><RealField fx:id="maxStartLatitude"/></HBox>
+                    <HBox prefWidth="Infinity"><Label text="   최대 경도 : "/><RealField fx:id="maxStartLongitude"/></HBox>
+                    <Label text=" "></Label>
+                    <Label text=" [종료 지점]" GridPane.halignment="LEFT"/>
+                    <HBox prefWidth="Infinity"><Label text="   최소 위도 : "/><RealField fx:id="minEndLatitude"/></HBox>
+                    <HBox prefWidth="Infinity"><Label text="   최소 경도 : "/><RealField fx:id="minEndLongitude"/></HBox>
+                    <HBox prefWidth="Infinity"><Label text="   최대 위도 : "/><RealField fx:id="maxEndLatitude"/></HBox>
+                    <HBox prefWidth="Infinity"><Label text="   최대 경도 : "/><RealField fx:id="maxEndLongitude"/></HBox>
+                </VBox>
+            </ScrollPane>
+        </VBox>
+
+        <VBox fx:id="eventAddTargetPanel" visible="false" GridPane.rowIndex="12" GridPane.columnSpan="2">
+            <ScrollPane fitToWidth="true" prefWidth="Infinity">
+                <VBox>
+                    <Label text=" [대상 환경변수]" GridPane.halignment="LEFT"/>
+                    <HBox><Label text="   "/><MenuButton fx:id="eventAddTargetEnviroment"></MenuButton></HBox>
+                    <Label text=" "></Label>
+                    <Label text=" [발생 반경]" GridPane.halignment="LEFT"/>
+                    <HBox prefWidth="Infinity"><Label text="   최소 반경 : "/><RealField fx:id="minAddEventRange" text="0"/></HBox>
+                    <HBox prefWidth="Infinity"><Label text="   최대 반경 : "/><RealField fx:id="maxAddEventRange" text="0.5"/></HBox>
+                </VBox>
+            </ScrollPane>
+        </VBox>
+
+        <VBox fx:id="eventRemoveTargetPanel" visible="false" GridPane.rowIndex="12" GridPane.columnSpan="2">
+            <ScrollPane fitToWidth="true" prefWidth="Infinity">
+                <VBox>
+                    <Label text=" [대상 환경변수]" GridPane.halignment="LEFT"/>
+                    <HBox><Label text="   "/><MenuButton fx:id="eventRemoveTargetEnviroment"></MenuButton></HBox>
+                    <Label text=" "></Label>
+                    <Label text=" [제거 반경]" GridPane.halignment="LEFT"/>
+                    <HBox prefWidth="Infinity"><Label text="   최소 반경 : "/><RealField fx:id="minRemoveEventRange" text="0"/></HBox>
+                    <HBox prefWidth="Infinity"><Label text="   최대 반경 : "/><RealField fx:id="maxRemoveEventRange" text="0.5"/></HBox>
+                </VBox>
+            </ScrollPane>
+        </VBox>
+
+        <Label text="추가 데이터" GridPane.halignment="LEFT" GridPane.rowIndex="14" GridPane.columnSpan="2"/>
+        <ScrollPane fx:id="additionalDataBox" fitToWidth="true" prefWidth="Infinity" GridPane.rowIndex="15" style="-fx-background-color: white" GridPane.columnSpan="2"/>
+
+        <Button fx:id="deletePattern" GridPane.rowIndex="17" GridPane.ColumnIndex="1" text="패턴 제거" prefWidth="100" onAction="#deletePattern"/>
+        <Button fx:id="saveEditted" GridPane.rowIndex="17" GridPane.halignment="LEFT" text="변경사항 저장" prefWidth="250" onAction="#savePattern" GridPane.columnSpan="2"/>
+    </children>
+</GridPane>
